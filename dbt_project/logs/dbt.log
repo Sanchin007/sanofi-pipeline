@@ -1,0 +1,173 @@
+[0m21:15:28.247943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F2A16270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F02F4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F540F9D0>]}
+
+
+============================== 21:15:28.256252 | d8b6b7fe-90c6-4664-b748-9a1b296ab7af ==============================
+[0m21:15:28.256252 [info ] [MainThread]: Running with dbt=1.12.3
+[0m21:15:28.257680 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project\\logs'}
+[0m21:15:28.827302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd8b6b7fe-90c6-4664-b748-9a1b296ab7af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F5489BA0>]}
+[0m21:15:28.952557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd8b6b7fe-90c6-4664-b748-9a1b296ab7af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F3608D10>]}
+[0m21:15:28.958441 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m21:15:29.461514 [debug] [MainThread]: checksum: 89087a50ac509fac77d0f4e22f43a26186050cefddec618846c7ccd8172f3aae, vars: {}, profile: sanofi_pipeline, target: dev, version: 1.12.3
+[0m21:15:29.464133 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:15:29.465109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd8b6b7fe-90c6-4664-b748-9a1b296ab7af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F559B350>]}
+[0m21:15:32.504910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd8b6b7fe-90c6-4664-b748-9a1b296ab7af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F575F5C0>]}
+[0m21:15:32.607806 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m21:15:32.613718 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m21:15:32.671385 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m21:15:32.695125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd8b6b7fe-90c6-4664-b748-9a1b296ab7af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F5D002F0>]}
+[0m21:15:32.695904 [info ] [MainThread]: Found 1 model, 500 macros
+[0m21:15:32.696698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd8b6b7fe-90c6-4664-b748-9a1b296ab7af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F57BAA90>]}
+[0m21:15:32.699691 [info ] [MainThread]: 
+[0m21:15:32.700661 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:15:32.701264 [info ] [MainThread]: 
+[0m21:15:32.702336 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:15:32.704367 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_warehouse'
+[0m21:15:35.954575 [debug] [ThreadPool]: Using duckdb connection "list_warehouse"
+[0m21:15:35.955307 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"warehouse"'
+    
+  
+  
+[0m21:15:35.955832 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:15:36.028804 [debug] [ThreadPool]: SQL status: OK in 0.073 seconds
+[0m21:15:36.031665 [debug] [ThreadPool]: On list_warehouse: Close
+[0m21:15:36.032813 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_warehouse, now create_warehouse_main)
+[0m21:15:36.033540 [debug] [ThreadPool]: Creating schema "database: "warehouse"
+schema: "main"
+"
+[0m21:15:36.044980 [debug] [ThreadPool]: Using duckdb connection "create_warehouse_main"
+[0m21:15:36.045585 [debug] [ThreadPool]: On create_warehouse_main: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "connection_name": "create_warehouse_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='warehouse'
+        and type != 'duckdb'
+    
+  
+[0m21:15:36.046025 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:15:36.048234 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:15:36.050077 [debug] [ThreadPool]: Using duckdb connection "create_warehouse_main"
+[0m21:15:36.050563 [debug] [ThreadPool]: On create_warehouse_main: BEGIN
+[0m21:15:36.051296 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:15:36.051734 [debug] [ThreadPool]: Using duckdb connection "create_warehouse_main"
+[0m21:15:36.052170 [debug] [ThreadPool]: On create_warehouse_main: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "connection_name": "create_warehouse_main"} */
+
+    
+    
+        create schema if not exists "warehouse"."main"
+    
+[0m21:15:36.054150 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:15:36.055386 [debug] [ThreadPool]: On create_warehouse_main: COMMIT
+[0m21:15:36.055847 [debug] [ThreadPool]: Using duckdb connection "create_warehouse_main"
+[0m21:15:36.056265 [debug] [ThreadPool]: On create_warehouse_main: COMMIT
+[0m21:15:36.057004 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:15:36.057466 [debug] [ThreadPool]: On create_warehouse_main: Close
+[0m21:15:36.059561 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_warehouse_main'
+[0m21:15:36.067097 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main"
+[0m21:15:36.067661 [debug] [ThreadPool]: On list_warehouse_main: BEGIN
+[0m21:15:36.068072 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:15:36.068956 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:15:36.069400 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main"
+[0m21:15:36.069845 [debug] [ThreadPool]: On list_warehouse_main: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "connection_name": "list_warehouse_main"} */
+select
+      'warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'warehouse'
+  
+[0m21:15:36.082273 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m21:15:36.083959 [debug] [ThreadPool]: On list_warehouse_main: ROLLBACK
+[0m21:15:36.084931 [debug] [ThreadPool]: On list_warehouse_main: Close
+[0m21:15:36.086093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd8b6b7fe-90c6-4664-b748-9a1b296ab7af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F5C5DE50>]}
+[0m21:15:36.087056 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:15:36.087585 [debug] [MainThread]: On master: BEGIN
+[0m21:15:36.088027 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:15:36.089262 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m21:15:36.089755 [debug] [MainThread]: On master: COMMIT
+[0m21:15:36.090204 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:15:36.090642 [debug] [MainThread]: On master: COMMIT
+[0m21:15:36.091476 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:15:36.091951 [debug] [MainThread]: On master: Close
+[0m21:15:36.136413 [debug] [Thread-1 (]: Began running node model.sanofi_pipeline.stg_hcps
+[0m21:15:36.137608 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_hcps ...................................... [RUN]
+[0m21:15:36.139246 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.sanofi_pipeline.stg_hcps'
+[0m21:15:36.140316 [debug] [Thread-1 (]: Began compiling node model.sanofi_pipeline.stg_hcps
+[0m21:15:36.153427 [debug] [Thread-1 (]: Writing injected SQL for node "model.sanofi_pipeline.stg_hcps"
+[0m21:15:36.157273 [debug] [Thread-1 (]: Began executing node model.sanofi_pipeline.stg_hcps
+[0m21:15:36.225485 [debug] [Thread-1 (]: Writing runtime sql for node "model.sanofi_pipeline.stg_hcps"
+[0m21:15:36.229921 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m21:15:36.231270 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: BEGIN
+[0m21:15:36.232281 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:15:36.234305 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:15:36.235169 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m21:15:36.236154 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_hcps"} */
+
+  
+  create view "warehouse"."main"."stg_hcps__dbt_tmp" as (
+    select
+    hcp_id,
+    trim(hcp_name) as hcp_name,
+    specialty,
+    region
+from raw.hcp_master
+  );
+
+[0m21:15:36.238200 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:15:36.247755 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m21:15:36.248475 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_hcps"} */
+alter view "warehouse"."main"."stg_hcps__dbt_tmp" rename to "stg_hcps"
+[0m21:15:36.249731 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:15:36.275343 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: COMMIT
+[0m21:15:36.276309 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m21:15:36.277278 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: COMMIT
+[0m21:15:36.282572 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m21:15:36.291177 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m21:15:36.292239 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_hcps"} */
+
+      drop view if exists "warehouse"."main"."stg_hcps__dbt_backup" cascade
+    
+[0m21:15:36.294441 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:15:36.298740 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: Close
+[0m21:15:36.302478 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd8b6b7fe-90c6-4664-b748-9a1b296ab7af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F2F44E10>]}
+[0m21:15:36.303814 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg_hcps ................................. [[32mOK[0m in 0.16s]
+[0m21:15:36.305229 [debug] [Thread-1 (]: Finished running node model.sanofi_pipeline.stg_hcps
+[0m21:15:36.307702 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:15:36.308598 [debug] [MainThread]: On master: BEGIN
+[0m21:15:36.309435 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:15:36.311065 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m21:15:36.311767 [debug] [MainThread]: On master: COMMIT
+[0m21:15:36.312388 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:15:36.313001 [debug] [MainThread]: On master: COMMIT
+[0m21:15:36.313996 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:15:36.314520 [debug] [MainThread]: On master: Close
+[0m21:15:36.315090 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:15:36.315441 [debug] [MainThread]: Connection 'create_warehouse_main' was properly closed.
+[0m21:15:36.315778 [debug] [MainThread]: Connection 'list_warehouse_main' was properly closed.
+[0m21:15:36.316119 [debug] [MainThread]: Connection 'model.sanofi_pipeline.stg_hcps' was properly closed.
+[0m21:15:36.316523 [info ] [MainThread]: 
+[0m21:15:36.317223 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.61 seconds (3.61s).
+[0m21:15:36.319094 [debug] [MainThread]: Command end result
+[0m21:15:36.420070 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m21:15:36.430995 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m21:15:36.437855 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m21:15:36.450352 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\run_results.json
+[0m21:15:36.450968 [info ] [MainThread]: 
+[0m21:15:36.451924 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:15:36.452689 [info ] [MainThread]: 
+[0m21:15:36.453356 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m21:15:36.455177 [debug] [MainThread]: Command `dbt run` succeeded at 21:15:36.454981 after 8.47 seconds
+[0m21:15:36.455824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267EEA5A0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F5BEFC80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F2F50350>]}
+[0m21:15:36.456368 [debug] [MainThread]: Flushing usage events
+[0m21:15:36.892963 [debug] [MainThread]: An error was encountered while trying to flush usage events
