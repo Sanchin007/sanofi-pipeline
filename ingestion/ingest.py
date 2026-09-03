@@ -15,4 +15,13 @@ con.execute(f"""
 n = con.execute("SELECT COUNT(*) FROM raw.hcp_master").fetchone()[0]
 print(f"Loaded {n} rows into raw.hcp_master")
 
+con.execute(f"""
+    CREATE OR REPLACE TABLE raw.sales_calls AS
+    SELECT * FROM read_csv_auto('{RAW_DIR / "calls.csv"}', header=True)
+""")
+
+n_calls = con.execute("SELECT COUNT(*) FROM raw.sales_calls").fetchone()[0]
+print(f"Loaded {n_calls} rows into raw.sales_calls")
 con.close()
+
+
