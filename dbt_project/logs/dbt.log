@@ -1578,3 +1578,632 @@ alter view "warehouse"."main"."stg_hcps__dbt_tmp" rename to "stg_hcps"
 [0m21:59:15.429124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265DC3C52D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265E04227D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265DE86EAC0>]}
 [0m21:59:15.429619 [debug] [MainThread]: Flushing usage events
 [0m21:59:15.871882 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:04:58.424378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BBC9D5E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BBA2A4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BBF3839D0>]}
+
+
+============================== 19:04:58.435869 | 54b57993-f71b-436a-9153-fe38f35fbb7e ==============================
+[0m19:04:58.435869 [info ] [MainThread]: Running with dbt=1.12.3
+[0m19:04:58.437003 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --target prod', 'log_path': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project\\logs'}
+[0m19:04:58.446038 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m19:04:58.447047 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Credentials in profile "sanofi_pipeline", target "prod" invalid: Runtime Error
+    Could not find adapter type snowflake!
+[0m19:04:58.448806 [debug] [MainThread]: Command `dbt run` failed at 19:04:58.448547 after 0.32 seconds
+[0m19:04:58.449509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BBF2EF100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BBF3132F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BBF444AF0>]}
+[0m19:04:58.450250 [debug] [MainThread]: Flushing usage events
+[0m19:04:58.945300 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:07:00.289498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F376FA5E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F374874B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F37995B9D0>]}
+
+
+============================== 19:07:00.297848 | 547d1de6-0532-45ce-b9f5-f89ae3cc99df ==============================
+[0m19:07:00.297848 [info ] [MainThread]: Running with dbt=1.12.3
+[0m19:07:00.298949 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --target prod', 'log_path': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project\\logs'}
+[0m19:07:08.003648 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:07:08.004367 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:07:08.004869 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:07:11.698837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '547d1de6-0532-45ce-b9f5-f89ae3cc99df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30B787E10>]}
+[0m19:07:11.785718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '547d1de6-0532-45ce-b9f5-f89ae3cc99df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30BBEB020>]}
+[0m19:07:11.787823 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m19:07:12.619641 [debug] [MainThread]: checksum: 1d4da947e416b0c16b028e3c922bc6d924599c961cd68b8ed287032ffbd54772, vars: {}, profile: sanofi_pipeline, target: prod, version: 1.12.3
+[0m19:07:12.759616 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m19:07:12.760884 [debug] [MainThread]: previous checksum: 1d4da947e416b0c16b028e3c922bc6d924599c961cd68b8ed287032ffbd54772, current checksum: 89087a50ac509fac77d0f4e22f43a26186050cefddec618846c7ccd8172f3aae
+[0m19:07:12.761385 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m19:07:12.761995 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m19:07:12.762784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '547d1de6-0532-45ce-b9f5-f89ae3cc99df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30BA2D650>]}
+[0m19:07:16.061143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '547d1de6-0532-45ce-b9f5-f89ae3cc99df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30BCFA8A0>]}
+[0m19:07:16.192472 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m19:07:16.198590 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m19:07:16.270222 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m19:07:16.298438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '547d1de6-0532-45ce-b9f5-f89ae3cc99df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30C348E50>]}
+[0m19:07:16.299166 [info ] [MainThread]: Found 3 models, 545 macros
+[0m19:07:16.300007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '547d1de6-0532-45ce-b9f5-f89ae3cc99df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30BFB4050>]}
+[0m19:07:16.305258 [info ] [MainThread]: 
+[0m19:07:16.306281 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m19:07:16.307208 [info ] [MainThread]: 
+[0m19:07:16.308547 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:07:16.317243 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANOFI_PIPELINE'
+[0m19:07:16.346337 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE"
+[0m19:07:16.347010 [debug] [ThreadPool]: On list_SANOFI_PIPELINE: show terse schemas in database SANOFI_PIPELINE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE"} */
+[0m19:07:16.347475 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:07:18.335565 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database SANOFI_PIPELINE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE"} */
+[0m19:07:18.336383 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:07:18.337072 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m19:07:18.337615 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:07:18.339180 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:07:18.339696 [debug] [MainThread]: Connection 'list_SANOFI_PIPELINE' was left open.
+[0m19:07:18.340098 [debug] [MainThread]: On list_SANOFI_PIPELINE: No close available on handle
+[0m19:07:18.340462 [info ] [MainThread]: 
+[0m19:07:18.341024 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 2.03 seconds (2.03s).
+[0m19:07:18.341936 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "SANOFI_PIPELINE"
+  Database Error
+    390100 (28000): Failed to connect to DB: absdzbt-vq73477.snowflakecomputing.com:443. Incorrect username or password was specified. [f8a66aea-b5b2-4795-ac86-8e34a1e8b1e9]
+[0m19:07:18.343649 [debug] [MainThread]: Command `dbt run` failed at 19:07:18.343469 after 18.25 seconds
+[0m19:07:18.344189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30C35E090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30BD70470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30C4BFEE0>]}
+[0m19:07:18.344659 [debug] [MainThread]: Flushing usage events
+[0m19:07:18.775413 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:10:54.898984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199E4C55E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199E2524B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199E760B9D0>]}
+
+
+============================== 19:10:54.906282 | 8bb4902d-8f5e-4b5c-91ad-0779d53e9846 ==============================
+[0m19:10:54.906282 [info ] [MainThread]: Running with dbt=1.12.3
+[0m19:10:54.907342 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project', 'invocation_command': 'dbt run --target prod', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project\\logs'}
+[0m19:10:56.197807 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:10:56.198440 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:10:56.199217 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:10:56.584640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8bb4902d-8f5e-4b5c-91ad-0779d53e9846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199F9217820>]}
+[0m19:10:56.676823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8bb4902d-8f5e-4b5c-91ad-0779d53e9846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199F9657240>]}
+[0m19:10:56.678914 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m19:10:57.376453 [debug] [MainThread]: checksum: 1d4da947e416b0c16b028e3c922bc6d924599c961cd68b8ed287032ffbd54772, vars: {}, profile: sanofi_pipeline, target: prod, version: 1.12.3
+[0m19:10:57.581594 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:10:57.582164 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m19:10:57.582514 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:10:57.595056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8bb4902d-8f5e-4b5c-91ad-0779d53e9846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199F949D850>]}
+[0m19:10:57.734999 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m19:10:57.740244 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m19:10:57.785639 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m19:10:57.804133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8bb4902d-8f5e-4b5c-91ad-0779d53e9846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199F9B0D4F0>]}
+[0m19:10:57.804912 [info ] [MainThread]: Found 3 models, 545 macros
+[0m19:10:57.805546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8bb4902d-8f5e-4b5c-91ad-0779d53e9846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199F9C89EF0>]}
+[0m19:10:57.808168 [info ] [MainThread]: 
+[0m19:10:57.808854 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m19:10:57.809368 [info ] [MainThread]: 
+[0m19:10:57.810187 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:10:57.817535 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANOFI_PIPELINE'
+[0m19:10:57.851395 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE"
+[0m19:10:57.852060 [debug] [ThreadPool]: On list_SANOFI_PIPELINE: show terse schemas in database SANOFI_PIPELINE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE"} */
+[0m19:10:57.852606 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:10:59.172594 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.320 seconds
+[0m19:10:59.181606 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_SANOFI_PIPELINE, now create_SANOFI_PIPELINE_dbt_dev)
+[0m19:10:59.183571 [debug] [ThreadPool]: Creating schema "database: "SANOFI_PIPELINE"
+schema: "dbt_dev"
+"
+[0m19:10:59.193546 [debug] [ThreadPool]: Using snowflake connection "create_SANOFI_PIPELINE_dbt_dev"
+[0m19:10:59.194545 [debug] [ThreadPool]: On create_SANOFI_PIPELINE_dbt_dev: create schema if not exists SANOFI_PIPELINE.dbt_dev
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "create_SANOFI_PIPELINE_dbt_dev"} */
+[0m19:10:59.285252 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.090 seconds
+[0m19:10:59.288770 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANOFI_PIPELINE_dbt_dev'
+[0m19:10:59.309503 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE_dbt_dev"
+[0m19:10:59.310111 [debug] [ThreadPool]: On list_SANOFI_PIPELINE_dbt_dev: show objects in SANOFI_PIPELINE.dbt_dev
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE_dbt_dev"} */;
+[0m19:10:59.310567 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:11:00.400811 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.090 seconds
+[0m19:11:00.409617 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE_dbt_dev"
+[0m19:11:00.410234 [debug] [ThreadPool]: On list_SANOFI_PIPELINE_dbt_dev: show user functions in SANOFI_PIPELINE.dbt_dev
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE_dbt_dev"} */
+[0m19:11:00.489437 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.079 seconds
+[0m19:11:00.492048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8bb4902d-8f5e-4b5c-91ad-0779d53e9846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199F9D1A5B0>]}
+[0m19:11:00.501498 [debug] [Thread-3 (]: Began running node model.sanofi_pipeline.stg_hcps
+[0m19:11:00.502237 [debug] [Thread-4 (]: Began running node model.sanofi_pipeline.stg_sales_calls
+[0m19:11:00.502878 [debug] [Thread-2 (]: Began running node model.sanofi_pipeline.hcp_engagement
+[0m19:11:00.503775 [info ] [Thread-3 (]: 2 of 3 START sql view model dbt_dev.stg_hcps ................................... [RUN]
+[0m19:11:00.506595 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.sanofi_pipeline.stg_hcps'
+[0m19:11:00.507178 [debug] [Thread-3 (]: Began compiling node model.sanofi_pipeline.stg_hcps
+[0m19:11:00.504603 [info ] [Thread-4 (]: 3 of 3 START sql view model dbt_dev.stg_sales_calls ............................ [RUN]
+[0m19:11:00.517200 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.sanofi_pipeline.stg_sales_calls'
+[0m19:11:00.505565 [info ] [Thread-2 (]: 1 of 3 START sql view model dbt_dev.hcp_engagement ............................. [RUN]
+[0m19:11:00.516006 [debug] [Thread-3 (]: Writing injected SQL for node "model.sanofi_pipeline.stg_hcps"
+[0m19:11:00.517917 [debug] [Thread-4 (]: Began compiling node model.sanofi_pipeline.stg_sales_calls
+[0m19:11:00.520801 [debug] [Thread-4 (]: Writing injected SQL for node "model.sanofi_pipeline.stg_sales_calls"
+[0m19:11:00.518932 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.sanofi_pipeline.hcp_engagement'
+[0m19:11:00.521727 [debug] [Thread-2 (]: Began compiling node model.sanofi_pipeline.hcp_engagement
+[0m19:11:00.524171 [debug] [Thread-2 (]: Writing injected SQL for node "model.sanofi_pipeline.hcp_engagement"
+[0m19:11:00.525473 [debug] [Thread-3 (]: Began executing node model.sanofi_pipeline.stg_hcps
+[0m19:11:00.526246 [debug] [Thread-4 (]: Began executing node model.sanofi_pipeline.stg_sales_calls
+[0m19:11:00.582240 [debug] [Thread-4 (]: Writing runtime sql for node "model.sanofi_pipeline.stg_sales_calls"
+[0m19:11:00.582962 [debug] [Thread-3 (]: Writing runtime sql for node "model.sanofi_pipeline.stg_hcps"
+[0m19:11:00.578068 [debug] [Thread-2 (]: Began executing node model.sanofi_pipeline.hcp_engagement
+[0m19:11:00.587736 [debug] [Thread-2 (]: Writing runtime sql for node "model.sanofi_pipeline.hcp_engagement"
+[0m19:11:00.589564 [debug] [Thread-3 (]: Using snowflake connection "model.sanofi_pipeline.stg_hcps"
+[0m19:11:00.591477 [debug] [Thread-3 (]: On model.sanofi_pipeline.stg_hcps: create or replace   view SANOFI_PIPELINE.dbt_dev.stg_hcps
+  
+  
+  
+  
+  as (
+    select
+    hcp_id,
+    trim(hcp_name) as hcp_name,
+    specialty,
+    region
+from raw.hcp_master
+  )
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "node_id": "model.sanofi_pipeline.stg_hcps"} */;
+[0m19:11:00.592071 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:11:00.590774 [debug] [Thread-4 (]: Using snowflake connection "model.sanofi_pipeline.stg_sales_calls"
+[0m19:11:00.592936 [debug] [Thread-4 (]: On model.sanofi_pipeline.stg_sales_calls: create or replace   view SANOFI_PIPELINE.dbt_dev.stg_sales_calls
+  
+  
+  
+  
+  as (
+    select
+    call_id,
+    hcp_id,
+    cast(call_date as date) as call_date,
+    channel
+from raw.sales_calls
+  )
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "node_id": "model.sanofi_pipeline.stg_sales_calls"} */;
+[0m19:11:00.593786 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:11:00.595344 [debug] [Thread-2 (]: Using snowflake connection "model.sanofi_pipeline.hcp_engagement"
+[0m19:11:00.597407 [debug] [Thread-2 (]: On model.sanofi_pipeline.hcp_engagement: create or replace   view SANOFI_PIPELINE.dbt_dev.hcp_engagement
+  
+  
+  
+  
+  as (
+    SELECT 
+    hcps.hcp_id,
+    hcps.hcp_name,
+    hcps.specialty,
+    hcps.region,
+    COUNT(calls.call_id) AS total_calls,
+FROM stg_hcps AS hcps
+LEFT JOIN stg_sales_calls AS calls
+    ON hcps.hcp_id = calls.hcp_id
+GROUP BY hcps.hcp_id, hcps.hcp_name, hcps.specialty, hcps.region
+ORDER BY total_calls DESC
+  )
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "node_id": "model.sanofi_pipeline.hcp_engagement"} */;
+[0m19:11:00.598129 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:11:01.028174 [debug] [Thread-3 (]: Snowflake adapter: Snowflake query id: 01c6df27-0002-12ac-0000-0002bf42f149
+[0m19:11:01.029303 [debug] [Thread-3 (]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'SANOFI_PIPELINE.RAW' does not exist or not authorized.
+[0m19:11:01.032427 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c6df27-0002-12ac-0000-0002bf42f145
+[0m19:11:01.034028 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'SANOFI_PIPELINE.DBT_DEV.STG_HCPS' does not exist or not authorized.
+[0m19:11:01.033422 [debug] [Thread-4 (]: Snowflake adapter: Snowflake query id: 01c6df27-0002-12ac-0000-0002bf42f141
+[0m19:11:01.036197 [debug] [Thread-4 (]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'SANOFI_PIPELINE.RAW' does not exist or not authorized.
+[0m19:11:01.067406 [debug] [Thread-2 (]: Database Error in model hcp_engagement (models\hcp_engagement.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'SANOFI_PIPELINE.DBT_DEV.STG_HCPS' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\hcp_engagement.sql
+[0m19:11:01.080770 [debug] [Thread-4 (]: Database Error in model stg_sales_calls (models\stg_sales_calls.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'SANOFI_PIPELINE.RAW' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\stg_sales_calls.sql
+[0m19:11:01.082787 [debug] [Thread-3 (]: Database Error in model stg_hcps (models\stg_hcps.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'SANOFI_PIPELINE.RAW' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\stg_hcps.sql
+[0m19:11:01.084388 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8bb4902d-8f5e-4b5c-91ad-0779d53e9846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199F9E031D0>]}
+[0m19:11:01.086498 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8bb4902d-8f5e-4b5c-91ad-0779d53e9846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199FAF18370>]}
+[0m19:11:01.086032 [error] [Thread-2 (]: 1 of 3 ERROR creating sql view model dbt_dev.hcp_engagement .................... [[31mERROR[0m in 0.56s]
+[0m19:11:01.085039 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8bb4902d-8f5e-4b5c-91ad-0779d53e9846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199FAF5A6D0>]}
+[0m19:11:01.089375 [debug] [Thread-2 (]: Finished running node model.sanofi_pipeline.hcp_engagement
+[0m19:11:01.088257 [error] [Thread-3 (]: 2 of 3 ERROR creating sql view model dbt_dev.stg_hcps .......................... [[31mERROR[0m in 0.58s]
+[0m19:11:01.090594 [error] [Thread-4 (]: 3 of 3 ERROR creating sql view model dbt_dev.stg_sales_calls ................... [[31mERROR[0m in 0.56s]
+[0m19:11:01.091752 [debug] [Thread-8 (]: Marking all children of 'model.sanofi_pipeline.hcp_engagement' to be skipped because of status 'error'.  Reason: Database Error in model hcp_engagement (models\hcp_engagement.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'SANOFI_PIPELINE.DBT_DEV.STG_HCPS' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\hcp_engagement.sql.
+[0m19:11:01.092730 [debug] [Thread-3 (]: Finished running node model.sanofi_pipeline.stg_hcps
+[0m19:11:01.093617 [debug] [Thread-4 (]: Finished running node model.sanofi_pipeline.stg_sales_calls
+[0m19:11:01.095509 [debug] [Thread-8 (]: Marking all children of 'model.sanofi_pipeline.stg_hcps' to be skipped because of status 'error'.  Reason: Database Error in model stg_hcps (models\stg_hcps.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'SANOFI_PIPELINE.RAW' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\stg_hcps.sql.
+[0m19:11:01.096563 [debug] [Thread-8 (]: Marking all children of 'model.sanofi_pipeline.stg_sales_calls' to be skipped because of status 'error'.  Reason: Database Error in model stg_sales_calls (models\stg_sales_calls.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'SANOFI_PIPELINE.RAW' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\stg_sales_calls.sql.
+[0m19:11:01.098840 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:11:01.099385 [debug] [MainThread]: Connection 'create_SANOFI_PIPELINE_dbt_dev' was left open.
+[0m19:11:01.099822 [debug] [MainThread]: On create_SANOFI_PIPELINE_dbt_dev: Close
+[0m19:11:01.183550 [debug] [MainThread]: Connection 'list_SANOFI_PIPELINE_dbt_dev' was left open.
+[0m19:11:01.184178 [debug] [MainThread]: On list_SANOFI_PIPELINE_dbt_dev: Close
+[0m19:11:01.261257 [debug] [MainThread]: Connection 'model.sanofi_pipeline.stg_hcps' was left open.
+[0m19:11:01.261886 [debug] [MainThread]: On model.sanofi_pipeline.stg_hcps: Close
+[0m19:11:01.363698 [debug] [MainThread]: Connection 'model.sanofi_pipeline.stg_sales_calls' was left open.
+[0m19:11:01.364303 [debug] [MainThread]: On model.sanofi_pipeline.stg_sales_calls: Close
+[0m19:11:01.457853 [debug] [MainThread]: Connection 'model.sanofi_pipeline.hcp_engagement' was left open.
+[0m19:11:01.458462 [debug] [MainThread]: On model.sanofi_pipeline.hcp_engagement: Close
+[0m19:11:01.541841 [info ] [MainThread]: 
+[0m19:11:01.542665 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 3.73 seconds (3.73s).
+[0m19:11:01.544378 [debug] [MainThread]: Command end result
+[0m19:11:01.611744 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m19:11:01.617155 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m19:11:01.623020 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m19:11:01.638890 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\run_results.json
+[0m19:11:01.639555 [info ] [MainThread]: 
+[0m19:11:01.640349 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m19:11:01.641040 [info ] [MainThread]: 
+[0m19:11:01.641728 [error] [MainThread]: [[31mERROR[0m]: in model hcp_engagement (models\hcp_engagement.sql)
+[0m19:11:01.642382 [error] [MainThread]:   Database Error in model hcp_engagement (models\hcp_engagement.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'SANOFI_PIPELINE.DBT_DEV.STG_HCPS' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\hcp_engagement.sql
+[0m19:11:01.642914 [info ] [MainThread]: 
+[0m19:11:01.643524 [info ] [MainThread]:   compiled code at target\compiled\sanofi_pipeline\models\hcp_engagement.sql
+[0m19:11:01.644040 [info ] [MainThread]: 
+[0m19:11:01.644658 [error] [MainThread]: [[31mERROR[0m]: in model stg_hcps (models\stg_hcps.sql)
+[0m19:11:01.645265 [error] [MainThread]:   Database Error in model stg_hcps (models\stg_hcps.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'SANOFI_PIPELINE.RAW' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\stg_hcps.sql
+[0m19:11:01.646087 [info ] [MainThread]: 
+[0m19:11:01.647455 [info ] [MainThread]:   compiled code at target\compiled\sanofi_pipeline\models\stg_hcps.sql
+[0m19:11:01.648408 [info ] [MainThread]: 
+[0m19:11:01.649619 [error] [MainThread]: [[31mERROR[0m]: in model stg_sales_calls (models\stg_sales_calls.sql)
+[0m19:11:01.650736 [error] [MainThread]:   Database Error in model stg_sales_calls (models\stg_sales_calls.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'SANOFI_PIPELINE.RAW' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\stg_sales_calls.sql
+[0m19:11:01.651517 [info ] [MainThread]: 
+[0m19:11:01.652414 [info ] [MainThread]:   compiled code at target\compiled\sanofi_pipeline\models\stg_sales_calls.sql
+[0m19:11:01.653047 [info ] [MainThread]: 
+[0m19:11:01.653932 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m19:11:01.656507 [debug] [MainThread]: Command `dbt run` failed at 19:11:01.656174 after 7.01 seconds
+[0m19:11:01.657504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199F9C7C4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199F9B28D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199E7623D90>]}
+[0m19:11:01.658202 [debug] [MainThread]: Flushing usage events
+[0m19:11:02.103687 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:21:18.517406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EA95E5E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EA6EC4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EABF9B9D0>]}
+
+
+============================== 19:21:18.527150 | f75dbd7b-dfec-44f3-8e7f-7df951676eaa ==============================
+[0m19:21:18.527150 [info ] [MainThread]: Running with dbt=1.12.3
+[0m19:21:18.528208 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --target prod', 'log_path': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project\\logs'}
+[0m19:21:20.028653 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:21:20.032834 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:21:20.033324 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:21:20.430215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f75dbd7b-dfec-44f3-8e7f-7df951676eaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EBE0DFA80>]}
+[0m19:21:20.519553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f75dbd7b-dfec-44f3-8e7f-7df951676eaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EAA248050>]}
+[0m19:21:20.522192 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m19:21:21.255544 [debug] [MainThread]: checksum: 1d4da947e416b0c16b028e3c922bc6d924599c961cd68b8ed287032ffbd54772, vars: {}, profile: sanofi_pipeline, target: prod, version: 1.12.3
+[0m19:21:21.476813 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:21:21.477334 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m19:21:21.477757 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:21:21.490260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f75dbd7b-dfec-44f3-8e7f-7df951676eaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EBE35ED50>]}
+[0m19:21:21.625659 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m19:21:21.631000 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m19:21:21.694249 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m19:21:21.719102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f75dbd7b-dfec-44f3-8e7f-7df951676eaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EBF9875C0>]}
+[0m19:21:21.720208 [info ] [MainThread]: Found 3 models, 545 macros
+[0m19:21:21.721368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f75dbd7b-dfec-44f3-8e7f-7df951676eaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EBFB504B0>]}
+[0m19:21:21.725574 [info ] [MainThread]: 
+[0m19:21:21.726596 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m19:21:21.727500 [info ] [MainThread]: 
+[0m19:21:21.729146 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:21:21.740291 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANOFI_PIPELINE'
+[0m19:21:21.776325 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE"
+[0m19:21:21.777016 [debug] [ThreadPool]: On list_SANOFI_PIPELINE: show terse schemas in database SANOFI_PIPELINE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE"} */
+[0m19:21:21.777470 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:21:22.998324 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.221 seconds
+[0m19:21:23.004502 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANOFI_PIPELINE_dbt_dev'
+[0m19:21:23.029698 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE_dbt_dev"
+[0m19:21:23.030281 [debug] [ThreadPool]: On list_SANOFI_PIPELINE_dbt_dev: show objects in SANOFI_PIPELINE.dbt_dev
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE_dbt_dev"} */;
+[0m19:21:23.030690 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:21:23.353233 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.322 seconds
+[0m19:21:23.361965 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE_dbt_dev"
+[0m19:21:23.362577 [debug] [ThreadPool]: On list_SANOFI_PIPELINE_dbt_dev: show user functions in SANOFI_PIPELINE.dbt_dev
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE_dbt_dev"} */
+[0m19:21:23.454584 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.091 seconds
+[0m19:21:23.457358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f75dbd7b-dfec-44f3-8e7f-7df951676eaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EBFB8EEA0>]}
+[0m19:21:23.464848 [debug] [Thread-3 (]: Began running node model.sanofi_pipeline.stg_hcps
+[0m19:21:23.465590 [debug] [Thread-4 (]: Began running node model.sanofi_pipeline.stg_sales_calls
+[0m19:21:23.466235 [debug] [Thread-2 (]: Began running node model.sanofi_pipeline.hcp_engagement
+[0m19:21:23.467058 [info ] [Thread-3 (]: 2 of 3 START sql view model dbt_dev.stg_hcps ................................... [RUN]
+[0m19:21:23.469781 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.sanofi_pipeline.stg_hcps'
+[0m19:21:23.470724 [debug] [Thread-3 (]: Began compiling node model.sanofi_pipeline.stg_hcps
+[0m19:21:23.467776 [info ] [Thread-4 (]: 3 of 3 START sql view model dbt_dev.stg_sales_calls ............................ [RUN]
+[0m19:21:23.468698 [info ] [Thread-2 (]: 1 of 3 START sql view model dbt_dev.hcp_engagement ............................. [RUN]
+[0m19:21:23.478837 [debug] [Thread-3 (]: Writing injected SQL for node "model.sanofi_pipeline.stg_hcps"
+[0m19:21:23.480188 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.sanofi_pipeline.stg_sales_calls'
+[0m19:21:23.483920 [debug] [Thread-4 (]: Began compiling node model.sanofi_pipeline.stg_sales_calls
+[0m19:21:23.482746 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.sanofi_pipeline.hcp_engagement'
+[0m19:21:23.486515 [debug] [Thread-2 (]: Began compiling node model.sanofi_pipeline.hcp_engagement
+[0m19:21:23.487991 [debug] [Thread-2 (]: Writing injected SQL for node "model.sanofi_pipeline.hcp_engagement"
+[0m19:21:23.485758 [debug] [Thread-4 (]: Writing injected SQL for node "model.sanofi_pipeline.stg_sales_calls"
+[0m19:21:23.489369 [debug] [Thread-3 (]: Began executing node model.sanofi_pipeline.stg_hcps
+[0m19:21:23.518232 [debug] [Thread-2 (]: Began executing node model.sanofi_pipeline.hcp_engagement
+[0m19:21:23.604919 [debug] [Thread-2 (]: Writing runtime sql for node "model.sanofi_pipeline.hcp_engagement"
+[0m19:21:23.606391 [debug] [Thread-3 (]: Writing runtime sql for node "model.sanofi_pipeline.stg_hcps"
+[0m19:21:23.607755 [debug] [Thread-4 (]: Began executing node model.sanofi_pipeline.stg_sales_calls
+[0m19:21:23.612471 [debug] [Thread-4 (]: Writing runtime sql for node "model.sanofi_pipeline.stg_sales_calls"
+[0m19:21:23.614568 [debug] [Thread-2 (]: Using snowflake connection "model.sanofi_pipeline.hcp_engagement"
+[0m19:21:23.615410 [debug] [Thread-2 (]: On model.sanofi_pipeline.hcp_engagement: create or replace   view SANOFI_PIPELINE.dbt_dev.hcp_engagement
+  
+  
+  
+  
+  as (
+    SELECT 
+    hcps.hcp_id,
+    hcps.hcp_name,
+    hcps.specialty,
+    hcps.region,
+    COUNT(calls.call_id) AS total_calls,
+FROM stg_hcps AS hcps
+LEFT JOIN stg_sales_calls AS calls
+    ON hcps.hcp_id = calls.hcp_id
+GROUP BY hcps.hcp_id, hcps.hcp_name, hcps.specialty, hcps.region
+ORDER BY total_calls DESC
+  )
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "node_id": "model.sanofi_pipeline.hcp_engagement"} */;
+[0m19:21:23.617492 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:21:23.616741 [debug] [Thread-3 (]: Using snowflake connection "model.sanofi_pipeline.stg_hcps"
+[0m19:21:23.618220 [debug] [Thread-3 (]: On model.sanofi_pipeline.stg_hcps: create or replace   view SANOFI_PIPELINE.dbt_dev.stg_hcps
+  
+  
+  
+  
+  as (
+    select
+    hcp_id,
+    trim(hcp_name) as hcp_name,
+    specialty,
+    region
+from raw.hcp_master
+  )
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "node_id": "model.sanofi_pipeline.stg_hcps"} */;
+[0m19:21:23.618812 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:21:23.620238 [debug] [Thread-4 (]: Using snowflake connection "model.sanofi_pipeline.stg_sales_calls"
+[0m19:21:23.621353 [debug] [Thread-4 (]: On model.sanofi_pipeline.stg_sales_calls: create or replace   view SANOFI_PIPELINE.dbt_dev.stg_sales_calls
+  
+  
+  
+  
+  as (
+    select
+    call_id,
+    hcp_id,
+    cast(call_date as date) as call_date,
+    channel
+from raw.sales_calls
+  )
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "node_id": "model.sanofi_pipeline.stg_sales_calls"} */;
+[0m19:21:23.622164 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:21:24.103815 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.485 seconds
+[0m19:21:24.145050 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f75dbd7b-dfec-44f3-8e7f-7df951676eaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EBFBE9FD0>]}
+[0m19:21:24.146167 [info ] [Thread-3 (]: 2 of 3 OK created sql view model dbt_dev.stg_hcps .............................. [[32mSUCCESS 1[0m in 0.67s]
+[0m19:21:24.147260 [debug] [Thread-3 (]: Finished running node model.sanofi_pipeline.stg_hcps
+[0m19:21:24.749653 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c6df31-0002-129d-0000-0002bf42d141
+[0m19:21:24.750341 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'SANOFI_PIPELINE.DBT_DEV.STG_SALES_CALLS' does not exist or not authorized.
+[0m19:21:24.761648 [debug] [Thread-2 (]: Database Error in model hcp_engagement (models\hcp_engagement.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'SANOFI_PIPELINE.DBT_DEV.STG_SALES_CALLS' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\hcp_engagement.sql
+[0m19:21:24.762534 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f75dbd7b-dfec-44f3-8e7f-7df951676eaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EBFCE26D0>]}
+[0m19:21:24.763500 [error] [Thread-2 (]: 1 of 3 ERROR creating sql view model dbt_dev.hcp_engagement .................... [[31mERROR[0m in 1.28s]
+[0m19:21:24.764602 [debug] [Thread-2 (]: Finished running node model.sanofi_pipeline.hcp_engagement
+[0m19:21:24.765788 [debug] [Thread-8 (]: Marking all children of 'model.sanofi_pipeline.hcp_engagement' to be skipped because of status 'error'.  Reason: Database Error in model hcp_engagement (models\hcp_engagement.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'SANOFI_PIPELINE.DBT_DEV.STG_SALES_CALLS' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\hcp_engagement.sql.
+[0m19:21:24.770129 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.148 seconds
+[0m19:21:24.773728 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f75dbd7b-dfec-44f3-8e7f-7df951676eaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EBFE6CC30>]}
+[0m19:21:24.774769 [info ] [Thread-4 (]: 3 of 3 OK created sql view model dbt_dev.stg_sales_calls ....................... [[32mSUCCESS 1[0m in 1.29s]
+[0m19:21:24.776590 [debug] [Thread-4 (]: Finished running node model.sanofi_pipeline.stg_sales_calls
+[0m19:21:24.778911 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:21:24.779481 [debug] [MainThread]: Connection 'list_SANOFI_PIPELINE' was left open.
+[0m19:21:24.779918 [debug] [MainThread]: On list_SANOFI_PIPELINE: Close
+[0m19:21:24.856574 [debug] [MainThread]: Connection 'list_SANOFI_PIPELINE_dbt_dev' was left open.
+[0m19:21:24.857206 [debug] [MainThread]: On list_SANOFI_PIPELINE_dbt_dev: Close
+[0m19:21:24.933182 [debug] [MainThread]: Connection 'model.sanofi_pipeline.stg_hcps' was left open.
+[0m19:21:24.933785 [debug] [MainThread]: On model.sanofi_pipeline.stg_hcps: Close
+[0m19:21:25.014067 [debug] [MainThread]: Connection 'model.sanofi_pipeline.stg_sales_calls' was left open.
+[0m19:21:25.014675 [debug] [MainThread]: On model.sanofi_pipeline.stg_sales_calls: Close
+[0m19:21:25.091138 [debug] [MainThread]: Connection 'model.sanofi_pipeline.hcp_engagement' was left open.
+[0m19:21:25.091774 [debug] [MainThread]: On model.sanofi_pipeline.hcp_engagement: Close
+[0m19:21:25.169936 [info ] [MainThread]: 
+[0m19:21:25.171186 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 3.44 seconds (3.44s).
+[0m19:21:25.173185 [debug] [MainThread]: Command end result
+[0m19:21:25.237623 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m19:21:25.243491 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m19:21:25.248928 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m19:21:25.259679 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\run_results.json
+[0m19:21:25.260225 [info ] [MainThread]: 
+[0m19:21:25.261188 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m19:21:25.262376 [info ] [MainThread]: 
+[0m19:21:25.263496 [error] [MainThread]: [[31mERROR[0m]: in model hcp_engagement (models\hcp_engagement.sql)
+[0m19:21:25.264711 [error] [MainThread]:   Database Error in model hcp_engagement (models\hcp_engagement.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'SANOFI_PIPELINE.DBT_DEV.STG_SALES_CALLS' does not exist or not authorized.
+  compiled code at target\run\sanofi_pipeline\models\hcp_engagement.sql
+[0m19:21:25.265661 [info ] [MainThread]: 
+[0m19:21:25.266823 [info ] [MainThread]:   compiled code at target\compiled\sanofi_pipeline\models\hcp_engagement.sql
+[0m19:21:25.267933 [info ] [MainThread]: 
+[0m19:21:25.268990 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m19:21:25.271584 [debug] [MainThread]: Command `dbt run` failed at 19:21:25.271302 after 6.98 seconds
+[0m19:21:25.272368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EBFA328D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EA9B285D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011EABFB3E00>]}
+[0m19:21:25.273101 [debug] [MainThread]: Flushing usage events
+[0m19:21:25.702983 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:24:10.598974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B7FF35E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B7D804B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B028EB9D0>]}
+
+
+============================== 19:24:10.606587 | 7f30afa5-0062-42dc-a21a-f844203da5ce ==============================
+[0m19:24:10.606587 [info ] [MainThread]: Running with dbt=1.12.3
+[0m19:24:10.607610 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run --target prod', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project\\logs'}
+[0m19:24:12.152446 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:24:12.153326 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:24:12.154033 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:24:12.576442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7f30afa5-0062-42dc-a21a-f844203da5ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B14B7FA80>]}
+[0m19:24:12.668154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7f30afa5-0062-42dc-a21a-f844203da5ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B00B90050>]}
+[0m19:24:12.670420 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m19:24:13.385789 [debug] [MainThread]: checksum: 1d4da947e416b0c16b028e3c922bc6d924599c961cd68b8ed287032ffbd54772, vars: {}, profile: sanofi_pipeline, target: prod, version: 1.12.3
+[0m19:24:13.567185 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:24:13.568073 [debug] [MainThread]: Partial parsing: updated file: sanofi_pipeline://models\hcp_engagement.sql
+[0m19:24:13.978041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7f30afa5-0062-42dc-a21a-f844203da5ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B14E0EF50>]}
+[0m19:24:14.104162 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m19:24:14.109444 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m19:24:14.172853 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m19:24:14.196233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7f30afa5-0062-42dc-a21a-f844203da5ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B167D6B70>]}
+[0m19:24:14.197182 [info ] [MainThread]: Found 3 models, 545 macros
+[0m19:24:14.197969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7f30afa5-0062-42dc-a21a-f844203da5ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B167BF690>]}
+[0m19:24:14.201480 [info ] [MainThread]: 
+[0m19:24:14.202333 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m19:24:14.202971 [info ] [MainThread]: 
+[0m19:24:14.204017 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:24:14.212025 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANOFI_PIPELINE'
+[0m19:24:14.240721 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE"
+[0m19:24:14.241519 [debug] [ThreadPool]: On list_SANOFI_PIPELINE: show terse schemas in database SANOFI_PIPELINE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE"} */
+[0m19:24:14.242067 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:24:15.499968 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.258 seconds
+[0m19:24:15.505094 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANOFI_PIPELINE_dbt_dev'
+[0m19:24:15.535065 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE_dbt_dev"
+[0m19:24:15.535732 [debug] [ThreadPool]: On list_SANOFI_PIPELINE_dbt_dev: show objects in SANOFI_PIPELINE.dbt_dev
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE_dbt_dev"} */;
+[0m19:24:15.536250 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:24:15.906363 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.370 seconds
+[0m19:24:15.915752 [debug] [ThreadPool]: Using snowflake connection "list_SANOFI_PIPELINE_dbt_dev"
+[0m19:24:15.916380 [debug] [ThreadPool]: On list_SANOFI_PIPELINE_dbt_dev: show user functions in SANOFI_PIPELINE.dbt_dev
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "connection_name": "list_SANOFI_PIPELINE_dbt_dev"} */
+[0m19:24:15.990712 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.074 seconds
+[0m19:24:15.994932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7f30afa5-0062-42dc-a21a-f844203da5ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B167EFAD0>]}
+[0m19:24:16.002637 [debug] [Thread-2 (]: Began running node model.sanofi_pipeline.stg_hcps
+[0m19:24:16.003364 [debug] [Thread-3 (]: Began running node model.sanofi_pipeline.stg_sales_calls
+[0m19:24:16.004144 [info ] [Thread-2 (]: 1 of 3 START sql view model dbt_dev.stg_hcps ................................... [RUN]
+[0m19:24:16.005892 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.sanofi_pipeline.stg_hcps'
+[0m19:24:16.006697 [debug] [Thread-2 (]: Began compiling node model.sanofi_pipeline.stg_hcps
+[0m19:24:16.015109 [debug] [Thread-2 (]: Writing injected SQL for node "model.sanofi_pipeline.stg_hcps"
+[0m19:24:16.004857 [info ] [Thread-3 (]: 2 of 3 START sql view model dbt_dev.stg_sales_calls ............................ [RUN]
+[0m19:24:16.016452 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.sanofi_pipeline.stg_sales_calls'
+[0m19:24:16.017168 [debug] [Thread-3 (]: Began compiling node model.sanofi_pipeline.stg_sales_calls
+[0m19:24:16.018910 [debug] [Thread-3 (]: Writing injected SQL for node "model.sanofi_pipeline.stg_sales_calls"
+[0m19:24:16.020265 [debug] [Thread-2 (]: Began executing node model.sanofi_pipeline.stg_hcps
+[0m19:24:16.069420 [debug] [Thread-2 (]: Writing runtime sql for node "model.sanofi_pipeline.stg_hcps"
+[0m19:24:16.070906 [debug] [Thread-3 (]: Began executing node model.sanofi_pipeline.stg_sales_calls
+[0m19:24:16.075260 [debug] [Thread-3 (]: Writing runtime sql for node "model.sanofi_pipeline.stg_sales_calls"
+[0m19:24:16.076622 [debug] [Thread-2 (]: Using snowflake connection "model.sanofi_pipeline.stg_hcps"
+[0m19:24:16.077291 [debug] [Thread-2 (]: On model.sanofi_pipeline.stg_hcps: create or replace   view SANOFI_PIPELINE.dbt_dev.stg_hcps
+  
+  
+  
+  
+  as (
+    select
+    hcp_id,
+    trim(hcp_name) as hcp_name,
+    specialty,
+    region
+from raw.hcp_master
+  )
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "node_id": "model.sanofi_pipeline.stg_hcps"} */;
+[0m19:24:16.077929 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:24:16.080475 [debug] [Thread-3 (]: Using snowflake connection "model.sanofi_pipeline.stg_sales_calls"
+[0m19:24:16.081547 [debug] [Thread-3 (]: On model.sanofi_pipeline.stg_sales_calls: create or replace   view SANOFI_PIPELINE.dbt_dev.stg_sales_calls
+  
+  
+  
+  
+  as (
+    select
+    call_id,
+    hcp_id,
+    cast(call_date as date) as call_date,
+    channel
+from raw.sales_calls
+  )
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "node_id": "model.sanofi_pipeline.stg_sales_calls"} */;
+[0m19:24:16.082483 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:24:16.605873 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.528 seconds
+[0m19:24:16.650217 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f30afa5-0062-42dc-a21a-f844203da5ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B16AEE450>]}
+[0m19:24:16.651341 [info ] [Thread-2 (]: 1 of 3 OK created sql view model dbt_dev.stg_hcps .............................. [[32mSUCCESS 1[0m in 0.64s]
+[0m19:24:16.652423 [debug] [Thread-2 (]: Finished running node model.sanofi_pipeline.stg_hcps
+[0m19:24:17.246115 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.164 seconds
+[0m19:24:17.250474 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f30afa5-0062-42dc-a21a-f844203da5ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B16843750>]}
+[0m19:24:17.251446 [info ] [Thread-3 (]: 2 of 3 OK created sql view model dbt_dev.stg_sales_calls ....................... [[32mSUCCESS 1[0m in 1.23s]
+[0m19:24:17.252731 [debug] [Thread-3 (]: Finished running node model.sanofi_pipeline.stg_sales_calls
+[0m19:24:17.253830 [debug] [Thread-4 (]: Began running node model.sanofi_pipeline.hcp_engagement
+[0m19:24:17.254608 [info ] [Thread-4 (]: 3 of 3 START sql view model dbt_dev.hcp_engagement ............................. [RUN]
+[0m19:24:17.255659 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.sanofi_pipeline.hcp_engagement'
+[0m19:24:17.256369 [debug] [Thread-4 (]: Began compiling node model.sanofi_pipeline.hcp_engagement
+[0m19:24:17.260627 [debug] [Thread-4 (]: Writing injected SQL for node "model.sanofi_pipeline.hcp_engagement"
+[0m19:24:17.262225 [debug] [Thread-4 (]: Began executing node model.sanofi_pipeline.hcp_engagement
+[0m19:24:17.265907 [debug] [Thread-4 (]: Writing runtime sql for node "model.sanofi_pipeline.hcp_engagement"
+[0m19:24:17.268626 [debug] [Thread-4 (]: Using snowflake connection "model.sanofi_pipeline.hcp_engagement"
+[0m19:24:17.269753 [debug] [Thread-4 (]: On model.sanofi_pipeline.hcp_engagement: create or replace   view SANOFI_PIPELINE.dbt_dev.hcp_engagement
+  
+  
+  
+  
+  as (
+    SELECT 
+    hcps.hcp_id,
+    hcps.hcp_name,
+    hcps.specialty,
+    hcps.region,
+    COUNT(calls.call_id) AS total_calls,
+FROM SANOFI_PIPELINE.dbt_dev.stg_hcps AS hcps
+LEFT JOIN SANOFI_PIPELINE.dbt_dev.stg_sales_calls AS calls
+    ON hcps.hcp_id = calls.hcp_id
+GROUP BY hcps.hcp_id, hcps.hcp_name, hcps.specialty, hcps.region
+ORDER BY total_calls DESC
+  )
+/* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "prod", "node_id": "model.sanofi_pipeline.hcp_engagement"} */;
+[0m19:24:17.270753 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:24:17.806805 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.536 seconds
+[0m19:24:17.810191 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f30afa5-0062-42dc-a21a-f844203da5ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B168B2C10>]}
+[0m19:24:17.811157 [info ] [Thread-4 (]: 3 of 3 OK created sql view model dbt_dev.hcp_engagement ........................ [[32mSUCCESS 1[0m in 0.55s]
+[0m19:24:17.812179 [debug] [Thread-4 (]: Finished running node model.sanofi_pipeline.hcp_engagement
+[0m19:24:17.814399 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:24:17.815034 [debug] [MainThread]: Connection 'list_SANOFI_PIPELINE' was left open.
+[0m19:24:17.815602 [debug] [MainThread]: On list_SANOFI_PIPELINE: Close
+[0m19:24:17.892163 [debug] [MainThread]: Connection 'list_SANOFI_PIPELINE_dbt_dev' was left open.
+[0m19:24:17.892782 [debug] [MainThread]: On list_SANOFI_PIPELINE_dbt_dev: Close
+[0m19:24:17.967541 [debug] [MainThread]: Connection 'model.sanofi_pipeline.stg_hcps' was left open.
+[0m19:24:17.968161 [debug] [MainThread]: On model.sanofi_pipeline.stg_hcps: Close
+[0m19:24:18.043470 [debug] [MainThread]: Connection 'model.sanofi_pipeline.stg_sales_calls' was left open.
+[0m19:24:18.044137 [debug] [MainThread]: On model.sanofi_pipeline.stg_sales_calls: Close
+[0m19:24:18.118100 [debug] [MainThread]: Connection 'model.sanofi_pipeline.hcp_engagement' was left open.
+[0m19:24:18.118718 [debug] [MainThread]: On model.sanofi_pipeline.hcp_engagement: Close
+[0m19:24:18.198001 [info ] [MainThread]: 
+[0m19:24:18.198923 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 3.99 seconds (3.99s).
+[0m19:24:18.200750 [debug] [MainThread]: Command end result
+[0m19:24:18.264937 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m19:24:18.270379 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m19:24:18.275674 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m19:24:18.286570 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\run_results.json
+[0m19:24:18.287118 [info ] [MainThread]: 
+[0m19:24:18.288088 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:24:18.288951 [info ] [MainThread]: 
+[0m19:24:18.289540 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m19:24:18.291266 [debug] [MainThread]: Command `dbt run` succeeded at 19:24:18.291075 after 7.98 seconds
+[0m19:24:18.291826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B16835ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B164994D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B02907E00>]}
+[0m19:24:18.292269 [debug] [MainThread]: Flushing usage events
+[0m19:24:18.734044 [debug] [MainThread]: An error was encountered while trying to flush usage events

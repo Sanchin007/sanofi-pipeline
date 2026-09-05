@@ -1,6 +1,10 @@
 
+  create or replace   view SANOFI_PIPELINE.dbt_dev.stg_sales_calls
   
-  create view "warehouse"."main"."stg_sales_calls__dbt_tmp" as (
+  
+  
+  
+  as (
     select
     call_id,
     hcp_id,
@@ -8,3 +12,4 @@
     channel
 from raw.sales_calls
   );
+

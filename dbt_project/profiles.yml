@@ -5,3 +5,13 @@ sanofi_pipeline:
       type: duckdb
       path: ../warehouse.duckdb
       threads: 4
+    prod:
+      type: snowflake
+      account: "absdzbt-vq73477"
+      user: "SANCHIN007"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: ACCOUNTADMIN
+      database: SANOFI_PIPELINE
+      warehouse: COMPUTE_WH
+      schema: dbt_dev
+      threads: 4
