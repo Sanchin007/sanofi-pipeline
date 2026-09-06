@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -28,6 +33,9 @@ jobs:
     needs: test
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -39,3 +47,13 @@ jobs:
         env:
           DBT_PROFILES_DIR: .
           SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+      - run: dbt docs generate --target prod
+        working-directory: dbt_project
+        env:
+          DBT_PROFILES_DIR: .
+          SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dbt_project/target
+      - id: deployment
+        uses: actions/deploy-pages@v4
