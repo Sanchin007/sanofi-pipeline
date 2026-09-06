@@ -2626,3 +2626,838 @@ ORDER BY total_calls DESC
 [0m21:32:48.052823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193F1AF3E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193E8FEA120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193F1A83710>]}
 [0m21:32:48.053537 [debug] [MainThread]: Flushing usage events
 [0m21:32:48.484312 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:45:02.962044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292C9D863C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292C76711D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292CC7579D0>]}
+
+
+============================== 17:45:02.972859 | 0d4f8f05-4231-464c-8432-2c39f8eb5698 ==============================
+[0m17:45:02.972859 [info ] [MainThread]: Running with dbt=1.12.3
+[0m17:45:02.973967 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project\\logs'}
+[0m17:45:02.980572 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m17:45:02.981850 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Credentials in profile "sanofi_pipeline", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+[0m17:45:02.983949 [debug] [MainThread]: Command `dbt run` failed at 17:45:02.983696 after 0.36 seconds
+[0m17:45:02.984597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292CC6AF360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292CC6D6D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292CC80C050>]}
+[0m17:45:02.985161 [debug] [MainThread]: Flushing usage events
+[0m17:45:03.488623 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:46:52.895831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED531F63C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED50AD11D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED55BC79D0>]}
+
+
+============================== 17:46:52.903070 | 09737f8a-5b90-4ba3-9711-c553be17e310 ==============================
+[0m17:46:52.903070 [info ] [MainThread]: Running with dbt=1.12.3
+[0m17:46:52.904133 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project\\logs'}
+[0m17:46:53.526328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED55D50D60>]}
+[0m17:46:53.616062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED53E109E0>]}
+[0m17:46:53.638284 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m17:46:54.159191 [debug] [MainThread]: checksum: 89087a50ac509fac77d0f4e22f43a26186050cefddec618846c7ccd8172f3aae, vars: {}, profile: sanofi_pipeline, target: dev, version: 1.12.3
+[0m17:46:54.324219 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m17:46:54.325581 [debug] [MainThread]: previous checksum: 89087a50ac509fac77d0f4e22f43a26186050cefddec618846c7ccd8172f3aae, current checksum: 1d4da947e416b0c16b028e3c922bc6d924599c961cd68b8ed287032ffbd54772
+[0m17:46:54.326233 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m17:46:54.327063 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m17:46:54.327872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED55CAF250>]}
+[0m17:46:57.825758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED561BAC60>]}
+[0m17:46:57.975659 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m17:46:57.982067 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m17:46:58.030376 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m17:46:58.058108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED576ACE50>]}
+[0m17:46:58.059197 [info ] [MainThread]: Found 4 models, 9 data tests, 500 macros
+[0m17:46:58.060269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED5633F040>]}
+[0m17:46:58.064700 [info ] [MainThread]: 
+[0m17:46:58.065697 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:46:58.066731 [info ] [MainThread]: 
+[0m17:46:58.110247 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m17:46:58.134069 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_warehouse'
+[0m17:47:01.515177 [debug] [ThreadPool]: Using duckdb connection "list_warehouse"
+[0m17:47:01.516050 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"warehouse"'
+    
+  
+  
+[0m17:47:01.516659 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:47:01.571982 [debug] [ThreadPool]: SQL status: OK in 0.055 seconds
+[0m17:47:01.574183 [debug] [ThreadPool]: On list_warehouse: Close
+[0m17:47:01.575464 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_warehouse, now create_warehouse_main)
+[0m17:47:01.576644 [debug] [ThreadPool]: Creating schema "database: "warehouse"
+schema: "main"
+"
+[0m17:47:01.588011 [debug] [ThreadPool]: Using duckdb connection "create_warehouse_main"
+[0m17:47:01.588607 [debug] [ThreadPool]: On create_warehouse_main: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "connection_name": "create_warehouse_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='warehouse'
+        and type != 'duckdb'
+    
+  
+[0m17:47:01.589047 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:47:01.590683 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m17:47:01.592537 [debug] [ThreadPool]: Using duckdb connection "create_warehouse_main"
+[0m17:47:01.593132 [debug] [ThreadPool]: On create_warehouse_main: BEGIN
+[0m17:47:01.593978 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:47:01.594396 [debug] [ThreadPool]: Using duckdb connection "create_warehouse_main"
+[0m17:47:01.594782 [debug] [ThreadPool]: On create_warehouse_main: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "connection_name": "create_warehouse_main"} */
+
+    
+    
+        create schema if not exists "warehouse"."main"
+    
+[0m17:47:01.595583 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:47:01.596672 [debug] [ThreadPool]: On create_warehouse_main: COMMIT
+[0m17:47:01.597091 [debug] [ThreadPool]: Using duckdb connection "create_warehouse_main"
+[0m17:47:01.597469 [debug] [ThreadPool]: On create_warehouse_main: COMMIT
+[0m17:47:01.598116 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:47:01.598531 [debug] [ThreadPool]: On create_warehouse_main: Close
+[0m17:47:01.601054 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_warehouse_main'
+[0m17:47:01.607765 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main"
+[0m17:47:01.608356 [debug] [ThreadPool]: On list_warehouse_main: BEGIN
+[0m17:47:01.608757 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:47:01.609651 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:47:01.610112 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main"
+[0m17:47:01.610501 [debug] [ThreadPool]: On list_warehouse_main: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "connection_name": "list_warehouse_main"} */
+select
+      'warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'warehouse'
+  
+[0m17:47:01.617439 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m17:47:01.619183 [debug] [ThreadPool]: On list_warehouse_main: ROLLBACK
+[0m17:47:01.619976 [debug] [ThreadPool]: On list_warehouse_main: Close
+[0m17:47:01.622348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED576A22D0>]}
+[0m17:47:01.623512 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:47:01.624225 [debug] [MainThread]: On master: BEGIN
+[0m17:47:01.625065 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:47:01.626615 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:47:01.627427 [debug] [MainThread]: On master: COMMIT
+[0m17:47:01.628107 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:47:01.628612 [debug] [MainThread]: On master: COMMIT
+[0m17:47:01.629671 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:47:01.630230 [debug] [MainThread]: On master: Close
+[0m17:47:01.641848 [debug] [Thread-1 (]: Began running node model.sanofi_pipeline.stg_hcps
+[0m17:47:01.642870 [debug] [Thread-2 (]: Began running node model.sanofi_pipeline.stg_sales_calls
+[0m17:47:01.643989 [info ] [Thread-1 (]: 1 of 4 START sql view model main.stg_hcps ...................................... [RUN]
+[0m17:47:01.646165 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.sanofi_pipeline.stg_hcps'
+[0m17:47:01.647070 [debug] [Thread-1 (]: Began compiling node model.sanofi_pipeline.stg_hcps
+[0m17:47:01.644921 [info ] [Thread-2 (]: 2 of 4 START sql view model main.stg_sales_calls ............................... [RUN]
+[0m17:47:01.658846 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.sanofi_pipeline.stg_sales_calls'
+[0m17:47:01.656854 [debug] [Thread-1 (]: Writing injected SQL for node "model.sanofi_pipeline.stg_hcps"
+[0m17:47:01.659840 [debug] [Thread-2 (]: Began compiling node model.sanofi_pipeline.stg_sales_calls
+[0m17:47:01.661887 [debug] [Thread-2 (]: Writing injected SQL for node "model.sanofi_pipeline.stg_sales_calls"
+[0m17:47:01.664409 [debug] [Thread-1 (]: Began executing node model.sanofi_pipeline.stg_hcps
+[0m17:47:01.674920 [debug] [Thread-2 (]: Began executing node model.sanofi_pipeline.stg_sales_calls
+[0m17:47:01.734614 [debug] [Thread-1 (]: Writing runtime sql for node "model.sanofi_pipeline.stg_hcps"
+[0m17:47:01.737818 [debug] [Thread-2 (]: Writing runtime sql for node "model.sanofi_pipeline.stg_sales_calls"
+[0m17:47:01.741882 [debug] [Thread-2 (]: Using duckdb connection "model.sanofi_pipeline.stg_sales_calls"
+[0m17:47:01.744101 [debug] [Thread-2 (]: On model.sanofi_pipeline.stg_sales_calls: BEGIN
+[0m17:47:01.744858 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:47:01.743039 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m17:47:01.746221 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: BEGIN
+[0m17:47:01.746869 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:47:01.747511 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m17:47:01.748432 [debug] [Thread-2 (]: Using duckdb connection "model.sanofi_pipeline.stg_sales_calls"
+[0m17:47:01.749017 [debug] [Thread-2 (]: On model.sanofi_pipeline.stg_sales_calls: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_sales_calls"} */
+
+  
+  create view "warehouse"."main"."stg_sales_calls__dbt_tmp" as (
+    select
+    call_id,
+    hcp_id,
+    cast(call_date as date) as call_date,
+    channel
+from raw.sales_calls
+  );
+
+[0m17:47:01.749599 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m17:47:01.750438 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m17:47:01.750997 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_hcps"} */
+
+  
+  create view "warehouse"."main"."stg_hcps__dbt_tmp" as (
+    select
+    hcp_id,
+    trim(hcp_name) as hcp_name,
+    specialty,
+    region
+from raw.hcp_master
+  );
+
+[0m17:47:01.751793 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m17:47:01.761180 [debug] [Thread-2 (]: Using duckdb connection "model.sanofi_pipeline.stg_sales_calls"
+[0m17:47:01.762910 [debug] [Thread-2 (]: On model.sanofi_pipeline.stg_sales_calls: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_sales_calls"} */
+alter view "warehouse"."main"."stg_sales_calls" rename to "stg_sales_calls__dbt_backup"
+[0m17:47:01.762048 [debug] [Thread-1 (]: SQL status: OK in 0.010 seconds
+[0m17:47:01.766415 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m17:47:01.767044 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_hcps"} */
+alter view "warehouse"."main"."stg_hcps" rename to "stg_hcps__dbt_backup"
+[0m17:47:01.767636 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m17:47:01.771017 [debug] [Thread-2 (]: Using duckdb connection "model.sanofi_pipeline.stg_sales_calls"
+[0m17:47:01.771635 [debug] [Thread-2 (]: On model.sanofi_pipeline.stg_sales_calls: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_sales_calls"} */
+alter view "warehouse"."main"."stg_sales_calls__dbt_tmp" rename to "stg_sales_calls"
+[0m17:47:01.772252 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m17:47:01.775977 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m17:47:01.776645 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_hcps"} */
+alter view "warehouse"."main"."stg_hcps__dbt_tmp" rename to "stg_hcps"
+[0m17:47:01.777241 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m17:47:01.799251 [debug] [Thread-2 (]: On model.sanofi_pipeline.stg_sales_calls: COMMIT
+[0m17:47:01.800790 [debug] [Thread-2 (]: Using duckdb connection "model.sanofi_pipeline.stg_sales_calls"
+[0m17:47:01.801238 [debug] [Thread-2 (]: On model.sanofi_pipeline.stg_sales_calls: COMMIT
+[0m17:47:01.800150 [debug] [Thread-1 (]: SQL status: OK in 0.022 seconds
+[0m17:47:01.803962 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: COMMIT
+[0m17:47:01.804817 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m17:47:01.806159 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m17:47:01.814416 [debug] [Thread-2 (]: Using duckdb connection "model.sanofi_pipeline.stg_sales_calls"
+[0m17:47:01.805561 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: COMMIT
+[0m17:47:01.815176 [debug] [Thread-2 (]: On model.sanofi_pipeline.stg_sales_calls: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_sales_calls"} */
+
+      drop view if exists "warehouse"."main"."stg_sales_calls__dbt_backup" cascade
+    
+[0m17:47:01.817987 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:47:01.822263 [debug] [Thread-1 (]: Using duckdb connection "model.sanofi_pipeline.stg_hcps"
+[0m17:47:01.818974 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m17:47:01.826811 [debug] [Thread-2 (]: On model.sanofi_pipeline.stg_sales_calls: Close
+[0m17:47:01.823003 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.stg_hcps"} */
+
+      drop view if exists "warehouse"."main"."stg_hcps__dbt_backup" cascade
+    
+[0m17:47:01.830690 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED537407E0>]}
+[0m17:47:01.831830 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m17:47:01.835420 [debug] [Thread-1 (]: On model.sanofi_pipeline.stg_hcps: Close
+[0m17:47:01.833010 [info ] [Thread-2 (]: 2 of 4 OK created sql view model main.stg_sales_calls .......................... [[32mOK[0m in 0.17s]
+[0m17:47:01.836603 [debug] [Thread-2 (]: Finished running node model.sanofi_pipeline.stg_sales_calls
+[0m17:47:01.837373 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED57A7B070>]}
+[0m17:47:01.839155 [info ] [Thread-1 (]: 1 of 4 OK created sql view model main.stg_hcps ................................. [[32mOK[0m in 0.19s]
+[0m17:47:01.840592 [debug] [Thread-1 (]: Finished running node model.sanofi_pipeline.stg_hcps
+[0m17:47:01.842338 [debug] [Thread-3 (]: Began running node model.sanofi_pipeline.hcp_engagement
+[0m17:47:01.843478 [info ] [Thread-3 (]: 3 of 4 START sql view model main.hcp_engagement ................................ [RUN]
+[0m17:47:01.845130 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.sanofi_pipeline.hcp_engagement'
+[0m17:47:01.846126 [debug] [Thread-3 (]: Began compiling node model.sanofi_pipeline.hcp_engagement
+[0m17:47:01.850518 [debug] [Thread-3 (]: Writing injected SQL for node "model.sanofi_pipeline.hcp_engagement"
+[0m17:47:01.853374 [debug] [Thread-3 (]: Began executing node model.sanofi_pipeline.hcp_engagement
+[0m17:47:01.859223 [debug] [Thread-3 (]: Writing runtime sql for node "model.sanofi_pipeline.hcp_engagement"
+[0m17:47:01.861656 [debug] [Thread-3 (]: Using duckdb connection "model.sanofi_pipeline.hcp_engagement"
+[0m17:47:01.862598 [debug] [Thread-3 (]: On model.sanofi_pipeline.hcp_engagement: BEGIN
+[0m17:47:01.863396 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:47:01.865069 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m17:47:01.865906 [debug] [Thread-3 (]: Using duckdb connection "model.sanofi_pipeline.hcp_engagement"
+[0m17:47:01.866691 [debug] [Thread-3 (]: On model.sanofi_pipeline.hcp_engagement: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.hcp_engagement"} */
+
+  
+  create view "warehouse"."main"."hcp_engagement__dbt_tmp" as (
+    with hcps as (
+    select * from "warehouse"."main"."stg_hcps"
+),
+
+calls as (
+    select * from "warehouse"."main"."stg_sales_calls"
+)
+
+select
+    h.hcp_id,
+    h.hcp_name,
+    h.specialty,
+    h.region,
+    count(c.call_id) as total_calls,
+    count(c.call_id) * 10 as engagement_score
+from hcps h
+left join calls c on h.hcp_id = c.hcp_id
+group by 1, 2, 3, 4
+  );
+
+[0m17:47:01.871094 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m17:47:01.875688 [debug] [Thread-3 (]: Using duckdb connection "model.sanofi_pipeline.hcp_engagement"
+[0m17:47:01.876633 [debug] [Thread-3 (]: On model.sanofi_pipeline.hcp_engagement: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.hcp_engagement"} */
+alter view "warehouse"."main"."hcp_engagement" rename to "hcp_engagement__dbt_backup"
+[0m17:47:01.878296 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m17:47:01.882049 [debug] [Thread-3 (]: Using duckdb connection "model.sanofi_pipeline.hcp_engagement"
+[0m17:47:01.882628 [debug] [Thread-3 (]: On model.sanofi_pipeline.hcp_engagement: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.hcp_engagement"} */
+alter view "warehouse"."main"."hcp_engagement__dbt_tmp" rename to "hcp_engagement"
+[0m17:47:01.883901 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m17:47:01.886375 [debug] [Thread-3 (]: On model.sanofi_pipeline.hcp_engagement: COMMIT
+[0m17:47:01.886981 [debug] [Thread-3 (]: Using duckdb connection "model.sanofi_pipeline.hcp_engagement"
+[0m17:47:01.887493 [debug] [Thread-3 (]: On model.sanofi_pipeline.hcp_engagement: COMMIT
+[0m17:47:01.890003 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m17:47:01.894373 [debug] [Thread-3 (]: Using duckdb connection "model.sanofi_pipeline.hcp_engagement"
+[0m17:47:01.895147 [debug] [Thread-3 (]: On model.sanofi_pipeline.hcp_engagement: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.hcp_engagement"} */
+
+      drop view if exists "warehouse"."main"."hcp_engagement__dbt_backup" cascade
+    
+[0m17:47:01.897813 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m17:47:01.900105 [debug] [Thread-3 (]: On model.sanofi_pipeline.hcp_engagement: Close
+[0m17:47:01.900956 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED579EA950>]}
+[0m17:47:01.901851 [info ] [Thread-3 (]: 3 of 4 OK created sql view model main.hcp_engagement ........................... [[32mOK[0m in 0.06s]
+[0m17:47:01.903780 [debug] [Thread-3 (]: Finished running node model.sanofi_pipeline.hcp_engagement
+[0m17:47:01.905123 [debug] [Thread-4 (]: Began running node model.sanofi_pipeline.region_summary
+[0m17:47:01.906019 [info ] [Thread-4 (]: 4 of 4 START sql view model main.region_summary ................................ [RUN]
+[0m17:47:01.907053 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.sanofi_pipeline.region_summary'
+[0m17:47:01.907962 [debug] [Thread-4 (]: Began compiling node model.sanofi_pipeline.region_summary
+[0m17:47:01.911339 [debug] [Thread-4 (]: Writing injected SQL for node "model.sanofi_pipeline.region_summary"
+[0m17:47:01.912823 [debug] [Thread-4 (]: Began executing node model.sanofi_pipeline.region_summary
+[0m17:47:01.916685 [debug] [Thread-4 (]: Writing runtime sql for node "model.sanofi_pipeline.region_summary"
+[0m17:47:01.918202 [debug] [Thread-4 (]: Using duckdb connection "model.sanofi_pipeline.region_summary"
+[0m17:47:01.918792 [debug] [Thread-4 (]: On model.sanofi_pipeline.region_summary: BEGIN
+[0m17:47:01.919270 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:47:01.920574 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m17:47:01.921066 [debug] [Thread-4 (]: Using duckdb connection "model.sanofi_pipeline.region_summary"
+[0m17:47:01.921533 [debug] [Thread-4 (]: On model.sanofi_pipeline.region_summary: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.region_summary"} */
+
+  
+  create view "warehouse"."main"."region_summary__dbt_tmp" as (
+    SELECT 
+    region,
+    COUNT(DISTINCT hcp_id) AS active_hcps,
+    SUM(total_calls) AS total_calls,
+    ROUND(SUM(total_calls) :: FLOAT / COUNT(DISTINCT hcp_id), 1) AS avg_calls_per_hcp
+FROM "warehouse"."main"."hcp_engagement"
+GROUP BY region
+ORDER BY total_calls DESC
+  );
+
+[0m17:47:01.924608 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m17:47:01.927632 [debug] [Thread-4 (]: Using duckdb connection "model.sanofi_pipeline.region_summary"
+[0m17:47:01.928240 [debug] [Thread-4 (]: On model.sanofi_pipeline.region_summary: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.region_summary"} */
+alter view "warehouse"."main"."region_summary__dbt_tmp" rename to "region_summary"
+[0m17:47:01.929752 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m17:47:01.931697 [debug] [Thread-4 (]: On model.sanofi_pipeline.region_summary: COMMIT
+[0m17:47:01.932202 [debug] [Thread-4 (]: Using duckdb connection "model.sanofi_pipeline.region_summary"
+[0m17:47:01.932686 [debug] [Thread-4 (]: On model.sanofi_pipeline.region_summary: COMMIT
+[0m17:47:01.935440 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m17:47:01.938935 [debug] [Thread-4 (]: Using duckdb connection "model.sanofi_pipeline.region_summary"
+[0m17:47:01.939548 [debug] [Thread-4 (]: On model.sanofi_pipeline.region_summary: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "model.sanofi_pipeline.region_summary"} */
+
+      drop view if exists "warehouse"."main"."region_summary__dbt_backup" cascade
+    
+[0m17:47:01.940895 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m17:47:01.944162 [debug] [Thread-4 (]: On model.sanofi_pipeline.region_summary: Close
+[0m17:47:01.945603 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09737f8a-5b90-4ba3-9711-c553be17e310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED576CF0E0>]}
+[0m17:47:01.946909 [info ] [Thread-4 (]: 4 of 4 OK created sql view model main.region_summary ........................... [[32mOK[0m in 0.04s]
+[0m17:47:01.948879 [debug] [Thread-4 (]: Finished running node model.sanofi_pipeline.region_summary
+[0m17:47:01.950959 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:47:01.951491 [debug] [MainThread]: On master: BEGIN
+[0m17:47:01.951889 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:47:01.953181 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:47:01.953557 [debug] [MainThread]: On master: COMMIT
+[0m17:47:01.953894 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:47:01.954234 [debug] [MainThread]: On master: COMMIT
+[0m17:47:01.955148 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:47:01.955527 [debug] [MainThread]: On master: Close
+[0m17:47:01.956020 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:47:01.956332 [debug] [MainThread]: Connection 'create_warehouse_main' was properly closed.
+[0m17:47:01.956628 [debug] [MainThread]: Connection 'list_warehouse_main' was properly closed.
+[0m17:47:01.956951 [debug] [MainThread]: Connection 'model.sanofi_pipeline.stg_hcps' was properly closed.
+[0m17:47:01.957266 [debug] [MainThread]: Connection 'model.sanofi_pipeline.stg_sales_calls' was properly closed.
+[0m17:47:01.957599 [debug] [MainThread]: Connection 'model.sanofi_pipeline.hcp_engagement' was properly closed.
+[0m17:47:01.957974 [debug] [MainThread]: Connection 'model.sanofi_pipeline.region_summary' was properly closed.
+[0m17:47:01.959167 [info ] [MainThread]: 
+[0m17:47:01.960389 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 3.85 seconds (3.85s).
+[0m17:47:01.963132 [debug] [MainThread]: Command end result
+[0m17:47:02.032130 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m17:47:02.038443 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m17:47:02.044823 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m17:47:02.055674 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\run_results.json
+[0m17:47:02.056361 [info ] [MainThread]: 
+[0m17:47:02.057463 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:47:02.058480 [info ] [MainThread]: 
+[0m17:47:02.059787 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m17:47:02.061985 [debug] [MainThread]: Command `dbt run` succeeded at 17:47:02.061752 after 9.40 seconds
+[0m17:47:02.062693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED579F2FF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED56412210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED55E963F0>]}
+[0m17:47:02.063359 [debug] [MainThread]: Flushing usage events
+[0m17:47:02.531799 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:48:26.152325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC603763C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC5DC651D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC62D479D0>]}
+
+
+============================== 17:48:26.159772 | 5c925d65-db7d-4ac7-be68-6622260498ec ==============================
+[0m17:48:26.159772 [info ] [MainThread]: Running with dbt=1.12.3
+[0m17:48:26.160857 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test', 'log_path': 'C:\\Users\\user\\Desktop\\sanofi-pipeline\\dbt_project\\logs'}
+[0m17:48:26.558615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5c925d65-db7d-4ac7-be68-6622260498ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC62F6CD60>]}
+[0m17:48:26.658737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5c925d65-db7d-4ac7-be68-6622260498ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC60F909E0>]}
+[0m17:48:26.663502 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m17:48:27.094625 [debug] [MainThread]: checksum: 89087a50ac509fac77d0f4e22f43a26186050cefddec618846c7ccd8172f3aae, vars: {}, profile: sanofi_pipeline, target: dev, version: 1.12.3
+[0m17:48:27.338865 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:48:27.339357 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:48:27.339672 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:48:27.354573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5c925d65-db7d-4ac7-be68-6622260498ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC63382E50>]}
+[0m17:48:27.531019 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m17:48:27.536403 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m17:48:27.593769 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m17:48:27.688956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5c925d65-db7d-4ac7-be68-6622260498ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC633734D0>]}
+[0m17:48:27.689765 [info ] [MainThread]: Found 4 models, 9 data tests, 500 macros
+[0m17:48:27.690577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5c925d65-db7d-4ac7-be68-6622260498ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC6368C130>]}
+[0m17:48:27.695485 [info ] [MainThread]: 
+[0m17:48:27.696335 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:48:27.697325 [info ] [MainThread]: 
+[0m17:48:27.698845 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m17:48:27.706706 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_warehouse_main'
+[0m17:48:27.834497 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main"
+[0m17:48:27.835023 [debug] [ThreadPool]: On list_warehouse_main: BEGIN
+[0m17:48:27.835378 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:48:27.870900 [debug] [ThreadPool]: SQL status: OK in 0.035 seconds
+[0m17:48:27.871454 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main"
+[0m17:48:27.871899 [debug] [ThreadPool]: On list_warehouse_main: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "connection_name": "list_warehouse_main"} */
+select
+      'warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'warehouse'
+  
+[0m17:48:27.881455 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m17:48:27.883364 [debug] [ThreadPool]: On list_warehouse_main: ROLLBACK
+[0m17:48:27.884187 [debug] [ThreadPool]: On list_warehouse_main: Close
+[0m17:48:27.887006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5c925d65-db7d-4ac7-be68-6622260498ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC638BCC80>]}
+[0m17:48:27.887910 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:48:27.888486 [debug] [MainThread]: On master: BEGIN
+[0m17:48:27.889000 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:48:27.890114 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:48:27.890620 [debug] [MainThread]: On master: COMMIT
+[0m17:48:27.891285 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:48:27.891877 [debug] [MainThread]: On master: COMMIT
+[0m17:48:27.892794 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:48:27.893378 [debug] [MainThread]: On master: Close
+[0m17:48:27.901913 [debug] [Thread-1 (]: Began running node test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11
+[0m17:48:27.902707 [debug] [Thread-3 (]: Began running node test.sanofi_pipeline.not_null_region_summary_region.f4b0430129
+[0m17:48:27.903515 [debug] [Thread-4 (]: Began running node test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2
+[0m17:48:27.904376 [debug] [Thread-2 (]: Began running node test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354
+[0m17:48:27.905088 [info ] [Thread-1 (]: 1 of 9 START test not_null_hcp_engagement_engagement_score ..................... [RUN]
+[0m17:48:27.908624 [debug] [Thread-1 (]: Acquiring new duckdb connection 'test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11'
+[0m17:48:27.909149 [debug] [Thread-1 (]: Began compiling node test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11
+[0m17:48:27.906508 [info ] [Thread-4 (]: 4 of 9 START test not_null_stg_hcps_hcp_id ..................................... [RUN]
+[0m17:48:27.937994 [debug] [Thread-4 (]: Acquiring new duckdb connection 'test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2'
+[0m17:48:27.940025 [debug] [Thread-4 (]: Began compiling node test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2
+[0m17:48:27.939362 [debug] [Thread-1 (]: Writing injected SQL for node "test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11"
+[0m17:48:27.905667 [info ] [Thread-3 (]: 3 of 9 START test not_null_region_summary_region ............................... [RUN]
+[0m17:48:27.907548 [info ] [Thread-2 (]: 2 of 9 START test not_null_hcp_engagement_hcp_id ............................... [RUN]
+[0m17:48:27.953558 [debug] [Thread-4 (]: Writing injected SQL for node "test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2"
+[0m17:48:27.955082 [debug] [Thread-3 (]: Acquiring new duckdb connection 'test.sanofi_pipeline.not_null_region_summary_region.f4b0430129'
+[0m17:48:27.957338 [debug] [Thread-3 (]: Began compiling node test.sanofi_pipeline.not_null_region_summary_region.f4b0430129
+[0m17:48:27.956210 [debug] [Thread-2 (]: Acquiring new duckdb connection 'test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354'
+[0m17:48:27.963876 [debug] [Thread-2 (]: Began compiling node test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354
+[0m17:48:27.975748 [debug] [Thread-2 (]: Writing injected SQL for node "test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354"
+[0m17:48:27.976728 [debug] [Thread-1 (]: Began executing node test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11
+[0m17:48:28.008706 [debug] [Thread-1 (]: Writing runtime sql for node "test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11"
+[0m17:48:27.984300 [debug] [Thread-3 (]: Writing injected SQL for node "test.sanofi_pipeline.not_null_region_summary_region.f4b0430129"
+[0m17:48:28.012424 [debug] [Thread-4 (]: Began executing node test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2
+[0m17:48:28.017513 [debug] [Thread-4 (]: Writing runtime sql for node "test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2"
+[0m17:48:28.011146 [debug] [Thread-2 (]: Began executing node test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354
+[0m17:48:28.013695 [debug] [Thread-1 (]: Using duckdb connection "test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11"
+[0m17:48:28.022311 [debug] [Thread-1 (]: On test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11: BEGIN
+[0m17:48:28.021363 [debug] [Thread-2 (]: Writing runtime sql for node "test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354"
+[0m17:48:28.023186 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:48:28.025506 [debug] [Thread-4 (]: Using duckdb connection "test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2"
+[0m17:48:28.023814 [debug] [Thread-3 (]: Began executing node test.sanofi_pipeline.not_null_region_summary_region.f4b0430129
+[0m17:48:28.031034 [debug] [Thread-3 (]: Writing runtime sql for node "test.sanofi_pipeline.not_null_region_summary_region.f4b0430129"
+[0m17:48:28.027237 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m17:48:28.026344 [debug] [Thread-4 (]: On test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2: BEGIN
+[0m17:48:28.033057 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:48:28.034200 [debug] [Thread-2 (]: Using duckdb connection "test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354"
+[0m17:48:28.032328 [debug] [Thread-1 (]: Using duckdb connection "test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11"
+[0m17:48:28.036747 [debug] [Thread-1 (]: On test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select engagement_score
+from "warehouse"."main"."hcp_engagement"
+where engagement_score is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:48:28.035977 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m17:48:28.038826 [debug] [Thread-4 (]: Using duckdb connection "test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2"
+[0m17:48:28.035036 [debug] [Thread-2 (]: On test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354: BEGIN
+[0m17:48:28.037682 [debug] [Thread-3 (]: Using duckdb connection "test.sanofi_pipeline.not_null_region_summary_region.f4b0430129"
+[0m17:48:28.041329 [debug] [Thread-3 (]: On test.sanofi_pipeline.not_null_region_summary_region.f4b0430129: BEGIN
+[0m17:48:28.040393 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:48:28.039557 [debug] [Thread-4 (]: On test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select hcp_id
+from "warehouse"."main"."stg_hcps"
+where hcp_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:48:28.042254 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:48:28.044783 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m17:48:28.045892 [debug] [Thread-2 (]: Using duckdb connection "test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354"
+[0m17:48:28.048390 [debug] [Thread-2 (]: On test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select hcp_id
+from "warehouse"."main"."hcp_engagement"
+where hcp_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:48:28.049564 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m17:48:28.046988 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m17:48:28.060130 [debug] [Thread-3 (]: Using duckdb connection "test.sanofi_pipeline.not_null_region_summary_region.f4b0430129"
+[0m17:48:28.059380 [debug] [Thread-4 (]: On test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2: ROLLBACK
+[0m17:48:28.061020 [debug] [Thread-1 (]: SQL status: OK in 0.022 seconds
+[0m17:48:28.061921 [debug] [Thread-3 (]: On test.sanofi_pipeline.not_null_region_summary_region.f4b0430129: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "test.sanofi_pipeline.not_null_region_summary_region.f4b0430129"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select region
+from "warehouse"."main"."region_summary"
+where region is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:48:28.065228 [debug] [Thread-1 (]: On test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11: ROLLBACK
+[0m17:48:28.065973 [debug] [Thread-2 (]: SQL status: OK in 0.015 seconds
+[0m17:48:28.066687 [debug] [Thread-4 (]: On test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2: Close
+[0m17:48:28.070520 [debug] [Thread-2 (]: On test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354: ROLLBACK
+[0m17:48:28.067977 [info ] [Thread-4 (]: 4 of 9 PASS not_null_stg_hcps_hcp_id ........................................... [[32mPASS[0m in 0.13s]
+[0m17:48:28.071696 [debug] [Thread-1 (]: On test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11: Close
+[0m17:48:28.072531 [debug] [Thread-3 (]: SQL status: OK in 0.009 seconds
+[0m17:48:28.073857 [debug] [Thread-4 (]: Finished running node test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2
+[0m17:48:28.074642 [debug] [Thread-2 (]: On test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354: Close
+[0m17:48:28.075617 [info ] [Thread-1 (]: 1 of 9 PASS not_null_hcp_engagement_engagement_score ........................... [[32mPASS[0m in 0.17s]
+[0m17:48:28.076578 [debug] [Thread-4 (]: Began running node test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29
+[0m17:48:28.078615 [debug] [Thread-3 (]: On test.sanofi_pipeline.not_null_region_summary_region.f4b0430129: ROLLBACK
+[0m17:48:28.079825 [debug] [Thread-1 (]: Finished running node test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11
+[0m17:48:28.081052 [info ] [Thread-2 (]: 2 of 9 PASS not_null_hcp_engagement_hcp_id ..................................... [[32mPASS[0m in 0.12s]
+[0m17:48:28.082180 [info ] [Thread-4 (]: 5 of 9 START test not_null_stg_sales_calls_call_id ............................. [RUN]
+[0m17:48:28.083692 [debug] [Thread-1 (]: Began running node test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b
+[0m17:48:28.084538 [debug] [Thread-3 (]: On test.sanofi_pipeline.not_null_region_summary_region.f4b0430129: Close
+[0m17:48:28.085859 [debug] [Thread-2 (]: Finished running node test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354
+[0m17:48:28.088868 [debug] [Thread-2 (]: Began running node test.sanofi_pipeline.unique_region_summary_region.1defe253ed
+[0m17:48:28.087810 [info ] [Thread-1 (]: 6 of 9 START test unique_hcp_engagement_hcp_id ................................. [RUN]
+[0m17:48:28.087023 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.sanofi_pipeline.not_null_stg_hcps_hcp_id.55c1ce21d2, now test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29)
+[0m17:48:28.090424 [info ] [Thread-3 (]: 3 of 9 PASS not_null_region_summary_region ..................................... [[32mPASS[0m in 0.14s]
+[0m17:48:28.092906 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.sanofi_pipeline.not_null_hcp_engagement_engagement_score.eb4c680d11, now test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b)
+[0m17:48:28.091445 [info ] [Thread-2 (]: 7 of 9 START test unique_region_summary_region ................................. [RUN]
+[0m17:48:28.093985 [debug] [Thread-4 (]: Began compiling node test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29
+[0m17:48:28.095491 [debug] [Thread-3 (]: Finished running node test.sanofi_pipeline.not_null_region_summary_region.f4b0430129
+[0m17:48:28.096946 [debug] [Thread-1 (]: Began compiling node test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b
+[0m17:48:28.097991 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.sanofi_pipeline.not_null_hcp_engagement_hcp_id.1ea4b5e354, now test.sanofi_pipeline.unique_region_summary_region.1defe253ed)
+[0m17:48:28.113897 [debug] [Thread-4 (]: Writing injected SQL for node "test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29"
+[0m17:48:28.114915 [debug] [Thread-3 (]: Began running node test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69
+[0m17:48:28.128231 [debug] [Thread-1 (]: Writing injected SQL for node "test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b"
+[0m17:48:28.129016 [debug] [Thread-2 (]: Began compiling node test.sanofi_pipeline.unique_region_summary_region.1defe253ed
+[0m17:48:28.141160 [debug] [Thread-2 (]: Writing injected SQL for node "test.sanofi_pipeline.unique_region_summary_region.1defe253ed"
+[0m17:48:28.130590 [info ] [Thread-3 (]: 8 of 9 START test unique_stg_hcps_hcp_id ....................................... [RUN]
+[0m17:48:28.142637 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.sanofi_pipeline.not_null_region_summary_region.f4b0430129, now test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69)
+[0m17:48:28.143953 [debug] [Thread-3 (]: Began compiling node test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69
+[0m17:48:28.147238 [debug] [Thread-2 (]: Began executing node test.sanofi_pipeline.unique_region_summary_region.1defe253ed
+[0m17:48:28.158275 [debug] [Thread-3 (]: Writing injected SQL for node "test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69"
+[0m17:48:28.159358 [debug] [Thread-4 (]: Began executing node test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29
+[0m17:48:28.160230 [debug] [Thread-1 (]: Began executing node test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b
+[0m17:48:28.163605 [debug] [Thread-2 (]: Writing runtime sql for node "test.sanofi_pipeline.unique_region_summary_region.1defe253ed"
+[0m17:48:28.167346 [debug] [Thread-4 (]: Writing runtime sql for node "test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29"
+[0m17:48:28.171412 [debug] [Thread-1 (]: Writing runtime sql for node "test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b"
+[0m17:48:28.173515 [debug] [Thread-3 (]: Began executing node test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69
+[0m17:48:28.177900 [debug] [Thread-3 (]: Writing runtime sql for node "test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69"
+[0m17:48:28.179387 [debug] [Thread-2 (]: Using duckdb connection "test.sanofi_pipeline.unique_region_summary_region.1defe253ed"
+[0m17:48:28.182035 [debug] [Thread-2 (]: On test.sanofi_pipeline.unique_region_summary_region.1defe253ed: BEGIN
+[0m17:48:28.180645 [debug] [Thread-4 (]: Using duckdb connection "test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29"
+[0m17:48:28.184246 [debug] [Thread-4 (]: On test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29: BEGIN
+[0m17:48:28.183309 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m17:48:28.185193 [debug] [Thread-3 (]: Using duckdb connection "test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69"
+[0m17:48:28.185897 [debug] [Thread-1 (]: Using duckdb connection "test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b"
+[0m17:48:28.186444 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m17:48:28.187573 [debug] [Thread-3 (]: On test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69: BEGIN
+[0m17:48:28.188124 [debug] [Thread-1 (]: On test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b: BEGIN
+[0m17:48:28.188779 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m17:48:28.189773 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m17:48:28.190412 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:48:28.191035 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m17:48:28.193164 [debug] [Thread-4 (]: Using duckdb connection "test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29"
+[0m17:48:28.191806 [debug] [Thread-2 (]: Using duckdb connection "test.sanofi_pipeline.unique_region_summary_region.1defe253ed"
+[0m17:48:28.193818 [debug] [Thread-4 (]: On test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select call_id
+from "warehouse"."main"."stg_sales_calls"
+where call_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:48:28.194501 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m17:48:28.195040 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m17:48:28.195708 [debug] [Thread-2 (]: On test.sanofi_pipeline.unique_region_summary_region.1defe253ed: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "test.sanofi_pipeline.unique_region_summary_region.1defe253ed"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    region as unique_field,
+    count(*) as n_records
+
+from "warehouse"."main"."region_summary"
+where region is not null
+group by region
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:48:28.197492 [debug] [Thread-3 (]: Using duckdb connection "test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69"
+[0m17:48:28.199759 [debug] [Thread-3 (]: On test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    hcp_id as unique_field,
+    count(*) as n_records
+
+from "warehouse"."main"."stg_hcps"
+where hcp_id is not null
+group by hcp_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:48:28.198328 [debug] [Thread-1 (]: Using duckdb connection "test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b"
+[0m17:48:28.201832 [debug] [Thread-1 (]: On test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    hcp_id as unique_field,
+    count(*) as n_records
+
+from "warehouse"."main"."hcp_engagement"
+where hcp_id is not null
+group by hcp_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:48:28.200649 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m17:48:28.205053 [debug] [Thread-4 (]: On test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29: ROLLBACK
+[0m17:48:28.207644 [debug] [Thread-4 (]: On test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29: Close
+[0m17:48:28.210232 [info ] [Thread-4 (]: 5 of 9 PASS not_null_stg_sales_calls_call_id ................................... [[32mPASS[0m in 0.12s]
+[0m17:48:28.213281 [debug] [Thread-4 (]: Finished running node test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29
+[0m17:48:28.215676 [debug] [Thread-4 (]: Began running node test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a
+[0m17:48:28.214719 [debug] [Thread-3 (]: SQL status: OK in 0.013 seconds
+[0m17:48:28.217227 [info ] [Thread-4 (]: 9 of 9 START test unique_stg_sales_calls_call_id ............................... [RUN]
+[0m17:48:28.219383 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.sanofi_pipeline.not_null_stg_sales_calls_call_id.923bac6f29, now test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a)
+[0m17:48:28.225859 [debug] [Thread-4 (]: Began compiling node test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a
+[0m17:48:28.223622 [debug] [Thread-3 (]: On test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69: ROLLBACK
+[0m17:48:28.238808 [debug] [Thread-1 (]: SQL status: OK in 0.036 seconds
+[0m17:48:28.239563 [debug] [Thread-2 (]: SQL status: OK in 0.040 seconds
+[0m17:48:28.237690 [debug] [Thread-4 (]: Writing injected SQL for node "test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a"
+[0m17:48:28.240358 [debug] [Thread-3 (]: On test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69: Close
+[0m17:48:28.244530 [debug] [Thread-1 (]: On test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b: ROLLBACK
+[0m17:48:28.247185 [debug] [Thread-2 (]: On test.sanofi_pipeline.unique_region_summary_region.1defe253ed: ROLLBACK
+[0m17:48:28.242319 [info ] [Thread-3 (]: 8 of 9 PASS unique_stg_hcps_hcp_id ............................................. [[32mPASS[0m in 0.10s]
+[0m17:48:28.249768 [debug] [Thread-3 (]: Finished running node test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69
+[0m17:48:28.250783 [debug] [Thread-4 (]: Began executing node test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a
+[0m17:48:28.255164 [debug] [Thread-4 (]: Writing runtime sql for node "test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a"
+[0m17:48:28.252342 [debug] [Thread-1 (]: On test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b: Close
+[0m17:48:28.251712 [debug] [Thread-2 (]: On test.sanofi_pipeline.unique_region_summary_region.1defe253ed: Close
+[0m17:48:28.256491 [info ] [Thread-1 (]: 6 of 9 PASS unique_hcp_engagement_hcp_id ....................................... [[32mPASS[0m in 0.16s]
+[0m17:48:28.259077 [debug] [Thread-1 (]: Finished running node test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b
+[0m17:48:28.258048 [info ] [Thread-2 (]: 7 of 9 PASS unique_region_summary_region ....................................... [[32mPASS[0m in 0.16s]
+[0m17:48:28.260346 [debug] [Thread-2 (]: Finished running node test.sanofi_pipeline.unique_region_summary_region.1defe253ed
+[0m17:48:28.261133 [debug] [Thread-4 (]: Using duckdb connection "test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a"
+[0m17:48:28.261896 [debug] [Thread-4 (]: On test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a: BEGIN
+[0m17:48:28.262463 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m17:48:28.264121 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m17:48:28.265374 [debug] [Thread-4 (]: Using duckdb connection "test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a"
+[0m17:48:28.266102 [debug] [Thread-4 (]: On test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "sanofi_pipeline", "target_name": "dev", "node_id": "test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    call_id as unique_field,
+    count(*) as n_records
+
+from "warehouse"."main"."stg_sales_calls"
+where call_id is not null
+group by call_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:48:28.273248 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m17:48:28.276011 [debug] [Thread-4 (]: On test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a: ROLLBACK
+[0m17:48:28.277316 [debug] [Thread-4 (]: On test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a: Close
+[0m17:48:28.278366 [info ] [Thread-4 (]: 9 of 9 PASS unique_stg_sales_calls_call_id ..................................... [[32mPASS[0m in 0.06s]
+[0m17:48:28.279294 [debug] [Thread-4 (]: Finished running node test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a
+[0m17:48:28.282051 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:48:28.282692 [debug] [MainThread]: On master: BEGIN
+[0m17:48:28.283249 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:48:28.284795 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:48:28.285359 [debug] [MainThread]: On master: COMMIT
+[0m17:48:28.285763 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:48:28.286394 [debug] [MainThread]: On master: COMMIT
+[0m17:48:28.287381 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:48:28.287913 [debug] [MainThread]: On master: Close
+[0m17:48:28.288821 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:48:28.289457 [debug] [MainThread]: Connection 'list_warehouse_main' was properly closed.
+[0m17:48:28.289898 [debug] [MainThread]: Connection 'test.sanofi_pipeline.unique_hcp_engagement_hcp_id.622261ef6b' was properly closed.
+[0m17:48:28.290311 [debug] [MainThread]: Connection 'test.sanofi_pipeline.unique_stg_sales_calls_call_id.e43e4cb51a' was properly closed.
+[0m17:48:28.290671 [debug] [MainThread]: Connection 'test.sanofi_pipeline.unique_stg_hcps_hcp_id.2a89df9f69' was properly closed.
+[0m17:48:28.291019 [debug] [MainThread]: Connection 'test.sanofi_pipeline.unique_region_summary_region.1defe253ed' was properly closed.
+[0m17:48:28.291591 [info ] [MainThread]: 
+[0m17:48:28.292173 [info ] [MainThread]: Finished running 9 data tests in 0 hours 0 minutes and 0.59 seconds (0.59s).
+[0m17:48:28.295234 [debug] [MainThread]: Command end result
+[0m17:48:28.358911 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\manifest.json
+[0m17:48:28.365361 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\semantic_manifest.json
+[0m17:48:28.370753 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\osi_document.json
+[0m17:48:28.382498 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\Desktop\sanofi-pipeline\dbt_project\target\run_results.json
+[0m17:48:28.383018 [info ] [MainThread]: 
+[0m17:48:28.383619 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:48:28.384213 [info ] [MainThread]: 
+[0m17:48:28.384765 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=9
+[0m17:48:28.386350 [debug] [MainThread]: Command `dbt test` succeeded at 17:48:28.386182 after 2.55 seconds
+[0m17:48:28.386893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC63A51A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC63A6BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC63A6AAF0>]}
+[0m17:48:28.387352 [debug] [MainThread]: Flushing usage events
+[0m17:48:28.841040 [debug] [MainThread]: An error was encountered while trying to flush usage events
