@@ -1,10 +1,6 @@
 
-  create or replace   view SANOFI_PIPELINE.dbt_dev.stg_hcps
   
-  
-  
-  
-  as (
+  create view "warehouse"."main"."stg_hcps__dbt_tmp" as (
     select
     hcp_id,
     trim(hcp_name) as hcp_name,
@@ -12,4 +8,3 @@
     region
 from raw.hcp_master
   );
-

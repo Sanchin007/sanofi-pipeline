@@ -1,20 +1,22 @@
 
-  create or replace   view SANOFI_PIPELINE.dbt_dev.hcp_engagement
   
-  
-  
-  
-  as (
-    SELECT 
-    hcps.hcp_id,
-    hcps.hcp_name,
-    hcps.specialty,
-    hcps.region,
-    COUNT(calls.call_id) AS total_calls,
-FROM SANOFI_PIPELINE.dbt_dev.stg_hcps AS hcps
-LEFT JOIN SANOFI_PIPELINE.dbt_dev.stg_sales_calls AS calls
-    ON hcps.hcp_id = calls.hcp_id
-GROUP BY hcps.hcp_id, hcps.hcp_name, hcps.specialty, hcps.region
-ORDER BY total_calls DESC
-  );
+  create view "warehouse"."main"."hcp_engagement__dbt_tmp" as (
+    with hcps as (
+    select * from "warehouse"."main"."stg_hcps"
+),
 
+calls as (
+    select * from "warehouse"."main"."stg_sales_calls"
+)
+
+select
+    h.hcp_id,
+    h.hcp_name,
+    h.specialty,
+    h.region,
+    count(c.call_id) as total_calls,
+    count(c.call_id) * 10 as engagement_score
+from hcps h
+left join calls c on h.hcp_id = c.hcp_id
+group by 1, 2, 3, 4
+  );
