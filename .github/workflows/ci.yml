@@ -3,6 +3,8 @@ name: dbt Continuous Integration
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   test:
@@ -24,6 +26,7 @@ jobs:
 
   deploy:
     needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
