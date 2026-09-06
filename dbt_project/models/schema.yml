@@ -7,6 +7,9 @@ models:
         tests:
           - unique
           - not_null
+      - name: specialty
+        tests:
+          - not_null
 
   - name: stg_sales_calls
     columns:
@@ -16,10 +19,15 @@ models:
           - not_null
 
   - name: hcp_engagement
+    description: "Aggregated HCP activity model calculating total touchpoints and commercial engagement scores."
     columns:
       - name: hcp_id
         tests:
           - unique
+          - not_null
+      - name: engagement_score
+        description: "Composite metric: (total_calls * 10) + total_email_opens"
+        tests:
           - not_null
 
   - name: region_summary
