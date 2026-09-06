@@ -7,4 +7,3 @@ FROM {{ ref('hcp_engagement') }}
 GROUP BY region
 ORDER BY total_calls DESC
 
-SELECT * FROM SANOFI_PIPELINE.DBT_DEV.REGION_SUMMARY;
