@@ -1,4 +1,4 @@
-\name: dbt Continuous Integration
+name: dbt Continuous Integration
 
 on:
   push:
