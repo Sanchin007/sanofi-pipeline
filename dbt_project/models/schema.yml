@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_hcps
+    columns:
+      - name: hcp_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_sales_calls
+    columns:
+      - name: call_id
+        tests:
+          - unique
+          - not_null
+
+  - name: hcp_engagement
+    columns:
+      - name: hcp_id
+        tests:
+          - unique
+          - not_null
+
+  - name: region_summary
+    columns:
+      - name: region
+        tests:
+          - unique
+          - not_null
