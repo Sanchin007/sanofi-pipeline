@@ -16,10 +16,15 @@ models:
           - not_null
 
   - name: hcp_engagement
+    description: "Aggregated HCP activity model calculating total touchpoints and engagement scores."
     columns:
       - name: hcp_id
         tests:
           - unique
+          - not_null
+      - name: engagement_score
+        description: "Composite metric: total_calls * 10"
+        tests:
           - not_null
 
   - name: region_summary
