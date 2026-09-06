@@ -1,18 +1,24 @@
-with hcps as (
-    select * from {{ ref('stg_hcps') }}
+{{ config(
+    materialized='incremental',
+    unique_key='hcp_id'
+) }}
+
+WITH sales_calls AS (
+    SELECT * FROM {{ ref('stg_sales_calls') }}
+    {% if is_incremental() %}
+        WHERE call_date > (SELECT MAX(latest_call_date) FROM {{ this }})
+    {% endif %}
 ),
-
-calls as (
-    select * from {{ ref('stg_sales_calls') }}
+hcps AS (
+    SELECT * FROM {{ ref('stg_hcps') }}
 )
-
-select
+SELECT
     h.hcp_id,
     h.hcp_name,
-    h.specialty,
     h.region,
-    count(c.call_id) as total_calls,
-    count(c.call_id) * 10 as engagement_score
-from hcps h
-left join calls c on h.hcp_id = c.hcp_id
-group by 1, 2, 3, 4
+    COUNT(s.call_id) AS total_calls,
+    MAX(s.call_date) AS latest_call_date,
+    ROUND(COUNT(s.call_id) * 12.5, 2) AS engagement_score
+FROM hcps h
+LEFT JOIN sales_calls s ON h.hcp_id = s.hcp_id
+GROUP BY 1, 2, 3
