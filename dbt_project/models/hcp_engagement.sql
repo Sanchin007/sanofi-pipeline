@@ -12,8 +12,7 @@ select
     h.specialty,
     h.region,
     count(c.call_id) as total_calls,
-    coalesce(sum(c.email_opens), 0) as total_email_opens,
-    (count(c.call_id) * 10) + coalesce(sum(c.email_opens), 0) as engagement_score
+    count(c.call_id) * 10 as engagement_score
 from hcps h
 left join calls c on h.hcp_id = c.hcp_id
 group by 1, 2, 3, 4
