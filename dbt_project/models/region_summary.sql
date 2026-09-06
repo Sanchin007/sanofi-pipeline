@@ -1,9 +1,9 @@
-SELECT 
+{{ config(materialized='table') }}
+
+SELECT
     region,
-    COUNT(DISTINCT hcp_id) AS active_hcps,
-    SUM(total_calls) AS total_calls,
-    ROUND(SUM(total_calls) :: FLOAT / COUNT(DISTINCT hcp_id), 1) AS avg_calls_per_hcp
+    COUNT(hcp_id) AS total_hcps,
+    ROUND(AVG(engagement_score), 2) AS avg_engagement_score,
+    SUM(total_calls) AS total_sales_calls
 FROM {{ ref('hcp_engagement') }}
 GROUP BY region
-ORDER BY total_calls DESC
-
